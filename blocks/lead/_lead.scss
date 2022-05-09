@@ -1,0 +1,9 @@
+.lead {
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "images"
+        "subtitle"
+        "button";
+}

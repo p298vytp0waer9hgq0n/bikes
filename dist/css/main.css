@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../vendor/Inter-Bold.woff2?v=3.19") format("woff2"), url("../vendor/Inter-Bold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../vendor/Inter-SemiBold.woff2?v=3.19") format("woff2"), url("../vendor/Inter-SemiBold.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../vendor/Inter-Medium.woff2?v=3.19") format("woff2"), url("../vendor/Inter-Medium.woff?v=3.19") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../vendor/Inter-Regular.woff2?v=3.19") format("woff2"), url("../vendor/Inter-Regular.woff?v=3.19") format("woff");
+}
+.page {
+  margin: 0;
+  padding: 0 17px 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.header {
+  min-height: 69px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__mobile-menu {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.header__nav {
+  display: none;
+}
+
+.lead {
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-areas: "title" "images" "subtitle" "button";
+}
+
+.lead__title {
+  margin: 45px 0 40px;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  color: #151515;
+}
+
+.lead__bike-card {
+  width: 82%;
+  grid-area: images;
+  padding: 40% 0 9%;
+}
+
+.lead__bike-image {
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  aspect-ratio: initial;
+  border-radius: 20px;
+}
+
+.lead__image {
+  width: 89%;
+  grid-area: images;
+  justify-self: end;
+}
+
+.lead__subtitle {
+  margin: 38px 0 41px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #222222;
+}
+
+.lead__button {
+  padding: 15px;
+  background: #24b47e;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 4px;
+}
+
+.inspiration {
+  padding-top: 21px;
+  display: grid;
+  border-top: 1px solid #e3e3e3;
+}
+
+.inspiration__image {
+  width: 100%;
+  aspect-ratio: initial;
+}
+
+.inspiration__quote {
+  margin-top: 41px;
+  font-size: 23px;
+  line-height: 1.26;
+  letter-spacing: -0.5px;
+}/*# sourceMappingURL=main.css.map */

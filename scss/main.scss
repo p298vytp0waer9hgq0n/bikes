@@ -1,0 +1,18 @@
+@import 'fonts', 'variables';
+@import '../blocks/page/page';
+
+@import '../blocks/header/header';
+@import '../blocks/header/__mobile-menu/header__mobile-menu';
+@import '../blocks/header/__nav/header__nav';
+
+@import '../blocks/lead/lead';
+@import '../blocks/lead/__title/lead__title';
+@import '../blocks/lead/__bike-card/lead__bike-card';
+@import '../blocks/lead/__bike-image/lead__bike-image';
+@import '../blocks/lead/__image/lead__image';
+@import '../blocks/lead/__subtitle/lead__subtitle';
+@import '../blocks/lead/__button/lead__button';
+
+@import '../blocks/inspiration/inspiration';
+@import '../blocks/inspiration/__image/inspiration__image';
+@import '../blocks/inspiration/__quote/inspiration__quote';
