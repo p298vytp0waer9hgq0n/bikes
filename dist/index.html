@@ -18,7 +18,7 @@
                 <li class="nav-list__element"><a href="#trainings">Тренировки</a></li>
             </ul>
         </nav>
-        <button class="header__mobile-menu" type="button"><svg width="22" height="19" fill="none"
+        <button class="header__mmbutton" type="button"><svg width="22" height="19" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 1.5h22m-22 8h22m-22 8h22" stroke="#151515" stroke-width="3" />
             </svg></button>
@@ -44,8 +44,10 @@
                 <p class="inspiration__occupation">Велогонщик</p>
             </div>
         </section>
+
         <div class="separator"></div>
-        <section class="surface">
+
+        <section class="surface" id="surface">
             <div class="surface__slider">
                 <div class="surface__slide">
                     <h2 class="surface__title">Шоссе</h2>
@@ -73,7 +75,7 @@
         
         <div class="separator"></div>
 
-        <section class="bykes">
+        <section class="bykes" id="bikes">
             <h1 class="bykes__title">Велосипеды</h1>
             <div class="bykes__dropdown-container">
                 <button class="bykes__dropdown-button" type="button">
@@ -137,7 +139,7 @@
 
         <div class="separator"></div>
 
-        <section class="training">
+        <section class="training" id="training">
             <h2 class="training__title">Тренировки</h2>
             <img src="./img/trainings.png" alt="Дорога в лесу" class="training__image">
             <p class="training__paragraph">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
@@ -146,14 +148,22 @@
                 <a href="https://www.strava.com" class="training__nav-element">Komoot</a>
             </nav>
         </section>
-
-        <footer class="footer">
-            <h1 class="footer__title">Подпишитесь на рассылку —</h1>
-            <input type="text" class="footer__input">
-            <p class="footer__copyright">© Road Club 2021</p>
-        </footer>
     </main>
-    
+
+    <footer class="footer">
+        <h1 class="footer__title">Подпишитесь на рассылку —</h1>
+        <input type="text" class="footer__input">
+        <p class="footer__copyright">© Road Club 2021</p>
+    </footer>
+    <div class="mobile-menu hidden">
+        <button class="mobile-menu__closebtn" aria-label="Закрыть"></button>
+        <nav class="mobile-menu__navigation">
+            <a href="#surface" class="mobile-menu__link">Покрытия и градиенты</a>
+            <a href="#bikes" class="mobile-menu__link">Велосипеды</a>
+            <a href="#training" class="mobile-menu__link">Тренировки</a>
+        </nav>
+        <div class="mobile-menu__theme-switch"></div>
+    </div>    
     <script src="./scripts/script.js"></script>
 </body>
 

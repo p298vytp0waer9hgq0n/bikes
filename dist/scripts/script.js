@@ -1,5 +1,19 @@
 // const surfSlides = document.querySelectorAll('.surface__slide');
 // const slideWidth = surfSlides[0].getBoundingClientRect().width;
+const mmButton = document.querySelector('.header__mmbutton');
+const mobileMenu = document.querySelector('.mobile-menu');
+const mmCloseButton = document.querySelector('.mobile-menu__closebtn');
+const mmLinks = document.querySelectorAll('.mobile-menu__link');
+const mmToggle = () => {
+    mobileMenu.classList.toggle('hidden');
+}
+
+mmButton.addEventListener('click', mmToggle);
+mmCloseButton.addEventListener('click', mmToggle);
+for (const link of mmLinks) {
+    link.addEventListener('click', mmToggle);
+}
+
 const surfaceSection = document.querySelector('.surface');
 const surfaceSlider = document.querySelector('.surface__slider');
 const surfacePrev = document.querySelector('.surface__navigation').firstElementChild;
