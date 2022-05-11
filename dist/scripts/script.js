@@ -8,12 +8,8 @@ const surfaceNext = document.querySelector('.surface__navigation').lastElementCh
 let direction = 0;
 
 surfaceNext.addEventListener('click', function (evt) {
-        // surfaceIndex++;
         direction = 1;
         surfaceSlider.style.transform = 'translate(-33.33%)';
-    
-        
-        // surfaceIndex--;
     });
 
 surfacePrev.addEventListener('click', (evt) => {

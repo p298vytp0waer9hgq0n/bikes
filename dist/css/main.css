@@ -209,27 +209,14 @@
   grid-template-areas: "title" "image" "descr";
 }
 
-.surface__image-container {
-  position: relative;
-  grid-area: cont;
-  display: flex;
-  gap: 17px;
-  padding: 0;
-  list-style: none;
-  transition: transform 0.4s;
-}
-
 .surface__flag {
   position: absolute;
-  top: 47%;
+  top: 75%;
   width: 70px;
   height: 28px;
   background-image: url("../img/flag-road.svg");
   background-repeat: no-repeat;
-}
-
-.surface__image-element {
-  width: 100%;
+  grid-area: image;
 }
 
 .surface__image {

@@ -1,8 +1,9 @@
 .surface__flag {
     position: absolute;
-    top: 47%;
+    top: 75%;
     width: 70px;
     height: 28px;
     background-image: url('../img/flag-road.svg');
     background-repeat: no-repeat;
+    grid-area: image;
 }
