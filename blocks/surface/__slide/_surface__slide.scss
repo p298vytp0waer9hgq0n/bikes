@@ -1,0 +1,10 @@
+.surface__slide {
+    position: relative;
+    padding: 0 17px;
+    flex-basis: 100%;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "image"
+        "descr";
+}

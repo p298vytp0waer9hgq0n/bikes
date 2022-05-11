@@ -1,7 +1,6 @@
 .surface__descr {
     @include paragraph-style;
-    margin: 22px 0 80px;
+    margin: 38px 0 80px;
     width: 100%;
     grid-area: descr;
-    grid-column: span 2;
 }

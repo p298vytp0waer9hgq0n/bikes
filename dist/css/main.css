@@ -44,6 +44,7 @@
 }
 
 .header {
+  box-sizing: border-box;
   padding: 0 17px;
   min-height: 69px;
   width: 100%;
@@ -154,11 +155,10 @@
 }
 
 .surface {
-  padding: 0 17px 0;
-  display: grid;
+  position: relative;
   overflow: hidden;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "title nav" "cont cont" "descr descr";
+  display: flex;
+  justify-content: flex-start;
 }
 
 .surface__title {
@@ -166,10 +166,13 @@
   line-height: 1.25;
   letter-spacing: -0.5px;
   color: #151515;
-  margin: 40px 0 24px;
+  margin: 40px 0 40px;
 }
 
 .surface__navigation {
+  position: absolute;
+  top: 34px;
+  right: 17px;
   padding-top: 13px;
   display: flex;
   justify-content: flex-end;
@@ -188,6 +191,22 @@
   border: none;
   border-radius: 50%;
   background-color: #ebebeb;
+  cursor: pointer;
+}
+
+.surface__slider {
+  display: flex;
+  width: 300%;
+  transition: all 0.4s;
+  flex-shrink: 0;
+}
+
+.surface__slide {
+  position: relative;
+  padding: 0 17px;
+  flex-basis: 100%;
+  display: grid;
+  grid-template-areas: "title" "image" "descr";
 }
 
 .surface__image-container {
@@ -202,7 +221,7 @@
 
 .surface__flag {
   position: absolute;
-  top: 75%;
+  top: 47%;
   width: 70px;
   height: 28px;
   background-image: url("../img/flag-road.svg");
@@ -215,7 +234,7 @@
 
 .surface__image {
   display: block;
-  width: calc(100vw - 34px);
+  width: 100%;
   aspect-ratio: 284/175;
 }
 
@@ -223,10 +242,9 @@
   font-size: 12px;
   line-height: 1.5;
   color: #222222;
-  margin: 22px 0 80px;
+  margin: 38px 0 80px;
   width: 100%;
   grid-area: descr;
-  grid-column: span 2;
 }
 
 .bykes {
