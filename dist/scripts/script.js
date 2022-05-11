@@ -29,3 +29,37 @@ surfaceSlider.addEventListener('transitionend', () => {
             direction = 0;
         }
 })
+
+const bikesDDButton = document.querySelector('.bykes__dropdown-button');
+const bikesListArrow = document.querySelector('.bykes__dropdown-icon');
+const bikesButtonText = document.querySelector('.bykes__dropdown-text');
+const bikesDDList = document.querySelector('.bykes__dropdown-list');
+const bikesDDElements = Array.from(document.querySelectorAll('.bykes__ddlist-element'));
+const bikesSliders = Array.from(document.querySelectorAll('.bykes__card-container'));
+
+bikesDDButton.addEventListener('click', () => {
+    if (bikesDDList.style.display === 'flex') {
+        bikesDDList.style.display = 'none';
+        bikesListArrow.style.transform = 'none'
+    } else {
+        bikesDDList.style.display = 'flex';
+        bikesListArrow.style.transform = 'scale(-1) translate(0, 5px)'
+    }
+});
+
+for (const bindex in bikesDDElements) {
+    bikesDDElements[bindex].addEventListener('click', (evt) => {
+        bikesButtonText.textContent = bikesDDElements[bindex].textContent;
+        bikesDDList.style.display = 'none';
+        bikesListArrow.style.transform = 'none';
+        for (const slindex in bikesSliders) {
+            // console.log(bikesSliders[bindex]);
+            if (slindex === bindex) {
+                console.log('blah');
+                bikesSliders[slindex].classList.remove('hidden');
+            } else {
+                bikesSliders[slindex].classList.add('hidden');
+            }
+        }
+    })
+}

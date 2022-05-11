@@ -23,6 +23,7 @@
                 <path d="M0 1.5h22m-22 8h22m-22 8h22" stroke="#151515" stroke-width="3" />
             </svg></button>
     </header>
+
     <main class="content">
         <section class="lead">
             <h1 class="lead__title">Шоссе, ТТ и&nbsp;Грэвел</h1>
@@ -32,7 +33,9 @@
                 нужно только определиться с выбором велосипеда и отправиться в путь.</p>
             <button class="lead__button" type="button">Подробнее</button>
         </section>
+
         <div class="separator"></div>
+
         <section class="inspiration">
             <img src="./img/quote.png" alt="Велосипедист на просёлке" class="inspiration__image">
             <h2 class="inspiration__quote">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</h2>
@@ -67,22 +70,62 @@
                 <button class="surface__button" type="button"><svg width="6" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.5 11 5 6 .5 1" stroke="#151515" stroke-width="1.2"/></svg></button>
             </div>
         </section>
+        
         <div class="separator"></div>
+
         <section class="bykes">
             <h1 class="bykes__title">Велосипеды</h1>
-            <button class="bykes__dropdown"><p class="bykes__dropdown-text">Шоссе</p><div class="bykes__dropdown-icon"></div></button>
+            <div class="bykes__dropdown-container">
+                <button class="bykes__dropdown-button" type="button">
+                    <p class="bykes__dropdown-text">Шоссе</p>
+                    <div class="bykes__dropdown-icon"></div>
+                </button>
+                <ul class="bykes__dropdown-list">
+                    <li class="bykes__ddlist-element">Шоссе</li>
+                    <li class="bykes__ddlist-element">Грэвел</li>
+                    <li class="bykes__ddlist-element">ТТ</li>
+                </ul>
+            </div>
             <div class="bykes__card-container">
                 <div class="bykes__card">
                     <img src="./img/cervelo-caledonia-5.png" alt="Cervelo Caledonia-5" class="bykes__image">
                     <p class="bykes__capture">Cervelo Caledonia-5</p>
                 </div>
                 <div class="bykes__card">
-                    <img src="./img/cannondale-systemsix-himod.png" alt="" class="bykes__image">
+                    <img src="./img/cannondale-systemsix-himod.png" alt="Cannondale Systemsix Himod" class="bykes__image">
                     <p class="bykes__capture">Cannondale Systemsix Himod</p>
                 </div>
                 <div class="bykes__card">
-                    <img src="./img/trek-domane-sl-7.png" alt="" class="bykes__image">
+                    <img src="./img/trek-domane-sl-7.png" alt="Treck Domane SL-7" class="bykes__image">
                     <p class="bykes__capture">Treck Domane SL-7</p>
+                </div>
+            </div>
+            <div class="bykes__card-container hidden">
+                <div class="bykes__card">
+                    <img src="./img/cervelo-aspero-grx-810.png" alt="Cervelo Aspero GRX 810" class="bykes__image">
+                    <p class="bykes__capture">Cervelo Aspero GRX 810</p>
+                </div>
+                <div class="bykes__card">
+                    <img src="./img/specialized-s-works-diverge.png" alt="Specialized S-Works Diverge" class="bykes__image">
+                    <p class="bykes__capture">Specialized S-Works Diverge</p>
+                </div>
+                <div class="bykes__card">
+                    <img src="./img/cannondale-topstone-lefty-3.png" alt="Cannondale Topstone Lefty 3" class="bykes__image">
+                    <p class="bykes__capture">Cannondale Topstone Lefty 3</p>
+                </div>
+            </div>
+            <div class="bykes__card-container hidden">
+                <div class="bykes__card">
+                    <img src="./img/specialized-s-works-shiv.png" alt="Specialized S-Work Shiv" class="bykes__image">
+                    <p class="bykes__capture">Specialized S-Work Shiv</p>
+                </div>
+                <div class="bykes__card">
+                    <img src="./img/bmc-timemachine-01-one.png" alt="BMC Timemachine 01 ONE" class="bykes__image">
+                    <p class="bykes__capture">BMC Timemachine 01 ONE</p>
+                </div>
+                <div class="bykes__card">
+                    <img src="./img/cervelo-p-series.png" alt="Cervelo P-Series" class="bykes__image">
+                    <p class="bykes__capture">Cervelo P-Series</p>
                 </div>
             </div>
                 <div class="bykes__navigation">
@@ -91,7 +134,9 @@
                     <div class="bykes__nav-element"></div>
                 </div>
         </section>
+
         <div class="separator"></div>
+
         <section class="training">
             <h2 class="training__title">Тренировки</h2>
             <img src="./img/trainings.png" alt="Дорога в лесу" class="training__image">
@@ -101,6 +146,7 @@
                 <a href="https://www.strava.com" class="training__nav-element">Komoot</a>
             </nav>
         </section>
+
         <footer class="footer">
             <h1 class="footer__title">Подпишитесь на рассылку —</h1>
             <input type="text" class="footer__input">

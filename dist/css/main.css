@@ -33,10 +33,6 @@
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-.hidden {
-  display: none;
-}
-
 .separator {
   margin: auto;
   width: calc(100vw - 34px);
@@ -247,7 +243,16 @@
   margin: 40px 0 40px;
 }
 
-.bykes__dropdown {
+.bykes__dropdown-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.bykes__dropdown-button {
   min-width: 114px;
   padding: 8px;
   display: flex;
@@ -255,6 +260,7 @@
   align-items: center;
   border: 1px solid #e3e3e3;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .bykes__dropdown-text {
@@ -270,6 +276,30 @@
   width: 12px;
   height: 10px;
   background: url("../img/button-dropdown.svg") no-repeat;
+}
+
+.bykes__dropdown-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  background: #ebebeb;
+  list-style: none;
+}
+
+.bykes__ddlist-element {
+  padding: 7px 0 7px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bykes__ddlist-element:hover {
+  opacity: 0.75;
 }
 
 .bykes__card-container {
@@ -383,4 +413,8 @@
   font-size: 14px;
   font-weight: 500;
   color: #cfcfcf;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
