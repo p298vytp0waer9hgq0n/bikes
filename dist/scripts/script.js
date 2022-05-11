@@ -55,7 +55,6 @@ for (const bindex in bikesDDElements) {
         for (const slindex in bikesSliders) {
             // console.log(bikesSliders[bindex]);
             if (slindex === bindex) {
-                console.log('blah');
                 bikesSliders[slindex].classList.remove('hidden');
             } else {
                 bikesSliders[slindex].classList.add('hidden');
@@ -63,3 +62,10 @@ for (const bindex in bikesDDElements) {
         }
     })
 }
+
+/* for (const slider of bikesSliders) {
+    slider.addEventListener('mousedown', (evt) => {
+        console.log(evt.offsetX);
+        console.log(window.innerWidth);
+    })
+} */
