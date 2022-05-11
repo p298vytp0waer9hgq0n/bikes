@@ -32,6 +32,7 @@
                 нужно только определиться с выбором велосипеда и отправиться в путь.</p>
             <button class="lead__button" type="button">Подробнее</button>
         </section>
+        <div class="separator"></div>
         <section class="inspiration">
             <img src="./img/quote.png" alt="Велосипедист на просёлке" class="inspiration__image">
             <h2 class="inspiration__quote">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</h2>
@@ -40,7 +41,75 @@
                 <p class="inspiration__occupation">Велогонщик</p>
             </div>
         </section>
+        <div class="separator"></div>
+        <section class="surface">
+            <div class="surface__title-container">
+                <h2 class="surface__title">Шоссе</h2>
+                <h2 class="surface__title hidden">Грэвел</h2>
+                <h2 class="surface__title hidden">TT</h2>
+            </div>
+            <div class="surface__navigation">
+                <button class="surface__button"><svg width="6" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 1 1 6l4.5 5" stroke="#151515" stroke-width="1.2"/></svg></button>
+                <button class="surface__button"><svg width="6" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.5 11 5 6 .5 1" stroke="#151515" stroke-width="1.2"/></svg></button>
+            </div>
+            <ul class="surface__image-container">
+                <li class="surface__image-element">
+                    <div class="surface__flag surface__flag_type_road"></div>
+                    <img src="./img/surf-road.png" alt="Шоссе" class="surface__image">
+                </li>
+                <li class="surface__image-element">
+                    <img src="./img/surf-gravel.png" alt="Грэвел" class="surface__image">
+                </li>
+                <li class="surface__image-element">
+                    <img src="./img/surf-tt.png" alt="ТТ" class="surface__image">
+                </li>
+            </ul>
+            <p class="surface__descr">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
+            <p class="surface__descr hidden">Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается, и на нём стоят более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.</p>
+            <p class="surface__descr hidden">ТТ — это велосипед для триатлона или раздельного старта, гоняют на таком велике только по равнинному асфальту, велик очень быстрый и аэродинамичный.</p>
+        </section>
+        <div class="separator"></div>
+        <section class="bykes">
+            <h1 class="bykes__title">Велосипеды</h1>
+            <button class="bykes__dropdown"><p class="bykes__dropdown-text">Шоссе</p><div class="bykes__dropdown-icon"></div></button>
+            <div class="bykes__card-container">
+                <div class="bykes__card">
+                    <img src="./img/cervelo-caledonia-5.png" alt="Cervelo Caledonia-5" class="bykes__image">
+                    <p class="bykes__capture">Cervelo Caledonia-5</p>
+                </div>
+                <div class="bykes__card">
+                    <img src="./img/cannondale-systemsix-himod.png" alt="" class="bykes__image">
+                    <p class="bykes__capture">Cannondale Systemsix Himod</p>
+                </div>
+                <div class="bykes__card">
+                    <img src="./img/trek-domane-sl-7.png" alt="" class="bykes__image">
+                    <p class="bykes__capture">Treck Domane SL-7</p>
+                </div>
+            </div>
+                <div class="bykes__navigation">
+                    <div class="bykes__nav-element"></div>
+                    <div class="bykes__nav-element"></div>
+                    <div class="bykes__nav-element"></div>
+                </div>
+        </section>
+        <div class="separator"></div>
+        <section class="training">
+            <h2 class="training__title">Тренировки</h2>
+            <img src="./img/trainings.png" alt="Дорога в лесу" class="training__image">
+            <p class="training__paragraph">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
+            <nav class="training__navigation">
+                <a href="https://www.komoot.com" class="training__nav-element">Strava</a>
+                <a href="https://www.strava.com" class="training__nav-element">Komoot</a>
+            </nav>
+        </section>
+        <footer class="footer">
+            <h1 class="footer__title">Подпишитесь на рассылку —</h1>
+            <input type="text" class="footer__input">
+            <p class="footer__copyright">© Road Club 2021</p>
+        </footer>
     </main>
+    
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

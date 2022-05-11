@@ -1,0 +1,10 @@
+.surface {
+    padding: 0 17px 0;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title nav"
+        "cont cont"
+        "descr descr";
+}

@@ -1,6 +1,9 @@
 @import 'fonts', 'variables';
 @import '../blocks/page/page';
 
+@import '../blocks/hidden/hidden';
+@import '../blocks/separator/separator';
+
 @import '../blocks/header/header';
 @import '../blocks/header/__mobile-menu/header__mobile-menu';
 @import '../blocks/header/__nav/header__nav';
@@ -16,3 +19,40 @@
 @import '../blocks/inspiration/inspiration';
 @import '../blocks/inspiration/__image/inspiration__image';
 @import '../blocks/inspiration/__quote/inspiration__quote';
+@import '../blocks/inspiration/__signature/inspiration__signature';
+@import '../blocks/inspiration/__name/inspiration__name';
+@import '../blocks/inspiration/__occupation/inspiration__occupation';
+
+@import '../blocks/surface/surface';
+@import '../blocks/surface/__title/surface__title';
+@import '../blocks/surface/__navigation/surface__navigation';
+@import '../blocks/surface/__button/surface__button';
+@import '../blocks/surface/__image-container/surface__image-container';
+@import '../blocks/surface/__flag/surface__flag';
+@import '../blocks/surface/__image-element/surface__image-element';
+@import '../blocks/surface/__image/surface__image';
+@import '../blocks/surface/__descr/surface__descr';
+
+@import '../blocks/bykes/bykes';
+@import '../blocks/bykes/__title/bykes__title';
+@import '../blocks/bykes/__dropdown/bykes__dropdown';
+@import '../blocks/bykes/__dropdown-text/bykes__dropdown-text';
+@import '../blocks/bykes/__dropdown-icon/bykes__dropdown-icon';
+@import '../blocks/bykes/__card-container/bykes__card-container';
+@import '../blocks/bykes/__card/bykes__card';
+@import '../blocks/bykes/__image/bykes__image';
+@import '../blocks/bykes/__capture/bykes__capture';
+@import '../blocks/bykes/__navigation/bykes__navigation';
+@import '../blocks/bykes/__nav-element/bykes__nav-element';
+
+@import '../blocks/training/training';
+@import '../blocks/training/__title/training__title';
+@import '../blocks/training/__image/training__image';
+@import '../blocks/training/__paragraph/training__paragraph';
+@import '../blocks/training/__navigation/training__navigation';
+@import '../blocks/training/__nav-element/training__nav-element';
+
+@import '../blocks/footer/footer';
+@import '../blocks/footer/__title/footer__title';
+@import '../blocks/footer/__input/footer__input';
+@import '../blocks/footer/__copyright/footer__copyright';

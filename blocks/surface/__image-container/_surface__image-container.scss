@@ -1,0 +1,9 @@
+.surface__image-container {
+    position: relative;
+    grid-area: cont;
+    display: flex;
+    gap: 17px;
+    padding: 0;
+    list-style: none;
+    transition: transform .4s;
+}
