@@ -1,0 +1,12 @@
+.surface__slider-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .surface__slider-container {
+        margin-left: 8.33%;
+    }
+}

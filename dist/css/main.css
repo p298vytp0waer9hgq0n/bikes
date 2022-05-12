@@ -334,11 +334,7 @@
   }
 }
 .surface {
-  position: relative;
   padding-top: 79px;
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-start;
 }
 
 .surface__title {
@@ -374,6 +370,18 @@
   cursor: pointer;
 }
 
+.surface__slider-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media screen and (min-width: 700px) {
+  .surface__slider-container {
+    margin-left: 8.33%;
+  }
+}
 .surface__slider {
   display: flex;
   width: 300%;
@@ -383,8 +391,7 @@
 
 @media screen and (min-width: 700px) {
   .surface__slider {
-    margin-left: 8.33%;
-    width: 144%;
+    width: 157%;
   }
 }
 .surface__slide {
@@ -409,9 +416,17 @@
   height: 28px;
   background-image: url("../img/flag-road.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   grid-area: image;
 }
 
+@media screen and (min-width: 700px) {
+  .surface__flag {
+    top: 86%;
+    width: 98px;
+    height: 40px;
+  }
+}
 .surface__image {
   display: block;
   width: 100%;
@@ -430,8 +445,9 @@
 @media screen and (min-width: 700px) {
   .surface__descr {
     margin-top: 0;
+    margin-bottom: 85px;
     display: block;
-    padding-right: 10%;
+    padding-right: 29%;
   }
 }
 .bykes {

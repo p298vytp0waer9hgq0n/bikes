@@ -5,5 +5,14 @@
     height: 28px;
     background-image: url('../img/flag-road.svg');
     background-repeat: no-repeat;
+    background-size: cover;
     grid-area: image;
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .surface__flag {
+        top: 86%;
+        width: 98px;
+        height: 40px;
+    }
 }
