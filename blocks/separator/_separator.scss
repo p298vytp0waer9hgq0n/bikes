@@ -3,3 +3,9 @@
     width: calc(100vw - 34px);
     border-top: 1px solid #e3e3e3;
 }
+
+@media screen and (min-width: $main-breakpoint) {
+    .separator {
+        display: none;
+    }
+}

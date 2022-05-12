@@ -40,6 +40,11 @@
   border-top: 1px solid #e3e3e3;
 }
 
+@media screen and (min-width: 700px) {
+  .separator {
+    display: none;
+  }
+}
 .header {
   box-sizing: border-box;
   padding: 0 17px;
@@ -257,11 +262,20 @@
 .inspiration {
   padding: 21px 17px 0;
   display: grid;
+  grid-template-areas: "image" "quote" "sign";
 }
 
+@media screen and (min-width: 700px) {
+  .inspiration {
+    padding: 42px 8.33% 0;
+    grid-template-columns: 54.2% 1fr;
+    grid-template-areas: "image quote" "image sign";
+  }
+}
 .inspiration__image {
   width: 100%;
   aspect-ratio: initial;
+  grid-area: image;
 }
 
 .inspiration__quote {
@@ -269,12 +283,30 @@
   font-size: 23px;
   line-height: 1.26;
   letter-spacing: -0.5px;
+  grid-area: quote;
+  color: #151515;
 }
 
+@media screen and (min-width: 700px) {
+  .inspiration__quote {
+    margin: 0px 0 0 14.5%;
+    font-size: min(34px, 2.43vw);
+    line-height: 1.29;
+    letter-spacing: -0.6px;
+  }
+}
 .inspiration__signature {
   margin-bottom: 81px;
+  grid-area: sign;
 }
 
+@media screen and (min-width: 700px) {
+  .inspiration__signature {
+    margin-bottom: 5px;
+    margin-left: 14.5%;
+    align-self: flex-end;
+  }
+}
 .inspiration__name {
   margin: 19px 0 4px;
   font-size: 14px;
@@ -283,6 +315,12 @@
   color: #151515;
 }
 
+@media screen and (min-width: 700px) {
+  .inspiration__name {
+    margin-bottom: 6px;
+    font-size: 20px;
+  }
+}
 .inspiration__occupation {
   margin: 0;
   font-size: 10px;
@@ -290,6 +328,11 @@
   color: #222222;
 }
 
+@media screen and (min-width: 700px) {
+  .inspiration__occupation {
+    font-size: 16px;
+  }
+}
 .surface {
   position: relative;
   overflow: hidden;

@@ -4,3 +4,9 @@
     line-height: 1.6;
     color: $color-paragraph;
 }
+
+@media screen and (min-width: $main-breakpoint) {
+    .inspiration__occupation {
+        font-size: 16px;
+    }
+}
