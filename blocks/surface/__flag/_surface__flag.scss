@@ -7,11 +7,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: image;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .3s;
 }
 
-@media screen and (min-width: $main-breakpoint) {
+@media screen and (min-width: $surface-breakpoint) {
     .surface__flag {
-        top: 86%;
+        top: 82%;
         width: 98px;
         height: 40px;
     }

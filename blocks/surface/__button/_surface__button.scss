@@ -11,3 +11,10 @@
     background-color: #ebebeb;
     cursor: pointer;
 }
+
+@media screen and (min-width: $surface-breakpoint) {
+    .surface__button {
+        transform: scale(2);
+
+    }
+}

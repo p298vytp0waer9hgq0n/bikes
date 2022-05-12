@@ -19,22 +19,48 @@ const surfaceSlider = document.querySelector('.surface__slider');
 const surfacePrev = document.querySelector('.surface__navigation').firstElementChild;
 const surfaceNext = document.querySelector('.surface__navigation').lastElementChild;
 
+function toggleVisibility (node) {
+    node.children[0].classList.toggle('visible');
+    node.children[1].classList.toggle('visible');
+    node.children[3].classList.toggle('visible');
+}
+
+function toggleButtons (a) {
+    if (a === 'off') {
+        surfacePrev.setAttribute('disabled', '');
+        surfaceNext.setAttribute('disabled', '');
+    } else if (a === 'on') {
+        surfacePrev.removeAttribute('disabled');
+        surfaceNext.removeAttribute('disabled');
+    }
+}
+
 let direction = 0;
 
 surfaceNext.addEventListener('click', function (evt) {
         direction = 1;
+        toggleVisibility(surfaceSlider.children[0]);
         surfaceSlider.style.transform = 'translate(-33.33%)';
     });
 
 surfacePrev.addEventListener('click', (evt) => {
+    toggleVisibility(surfaceSlider.children[0]);
     surfaceSlider.style.transition = 'none'
     surfaceSlider.prepend(surfaceSlider.lastElementChild);
     surfaceSlider.style.transform = 'translate(-33.33%)';
-    setTimeout(() => {surfaceSlider.style.transition = 'all .4s'}, 1);
-    setTimeout(() => {surfaceSlider.style.transform = 'translate(0)'}, 1);
+    setTimeout(() => {surfaceSlider.style.transition = 'all .4s'}, 2);
+    setTimeout(() => {surfaceSlider.style.transform = 'translate(0)'}, 2);
 });
 
-surfaceSlider.addEventListener('transitionend', () => {
+surfaceSlider.addEventListener('transitionstart', (evt) => {
+    if (evt.target === surfaceSlider) {
+         toggleButtons('off');
+    }
+});
+
+surfaceSlider.addEventListener('transitionend', (evt) => {
+    evt.stopPropagation();
+    if (evt.target === surfaceSlider) {
         if (direction === 1) {
             surfaceSlider.style.transition = 'none';
             surfaceSlider.appendChild(surfaceSlider.firstElementChild);
@@ -42,6 +68,9 @@ surfaceSlider.addEventListener('transitionend', () => {
             setTimeout(() => {surfaceSlider.style.transition = 'all .4s';}, 1);
             direction = 0;
         }
+        toggleVisibility(surfaceSlider.children[0]);
+        toggleButtons('on');
+    }
 })
 
 const bikesDDButton = document.querySelector('.bykes__dropdown-button');
@@ -76,6 +105,20 @@ for (const bindex in bikesDDElements) {
         }
     })
 }
+
+/* const images = document.querySelectorAll('.surface__image');
+for(const image of images) {
+    image.addEventListener('mouseenter', (evt) => {
+        evt.target.previousSibling.previousSibling.classList.add('visible');
+        // evt.target.previousSibling.classList.remove('hidden');
+    });
+}
+for(const image of images) {
+    image.addEventListener('mouseleave', (evt) => {
+        evt.target.previousSibling.previousSibling.classList.remove('visible');
+        // evt.target.previousSibling.classList.remove('hidden');
+    });
+} */
 
 /* for (const slider of bikesSliders) {
     slider.addEventListener('mousedown', (evt) => {

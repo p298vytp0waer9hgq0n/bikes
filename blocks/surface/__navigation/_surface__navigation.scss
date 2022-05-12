@@ -8,3 +8,13 @@
     gap: 12px;
     align-items: center;
 }
+
+@media screen and (min-width: $surface-breakpoint) {
+    .surface__navigation {
+        margin-left: $desktop-margin;
+        margin-top: 51px;
+        position: static;
+        justify-content: flex-start;
+        gap: 49px;
+    }
+}

@@ -1,3 +1,9 @@
 .surface {
-    padding-top: 79px;
+    position: relative;
+}
+
+@media screen and (min-width: $surface-breakpoint) {
+    .surface {
+        padding-top: 79px;
+    }
 }

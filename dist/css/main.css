@@ -334,15 +334,23 @@
   }
 }
 .surface {
-  padding-top: 79px;
+  position: relative;
 }
 
+@media screen and (min-width: 1230px) {
+  .surface {
+    padding-top: 79px;
+  }
+}
 .surface__title {
   font-size: min(55px, max(3.82vw, 32px));
   line-height: 1.25;
   letter-spacing: -0.5px;
   color: #151515;
   margin: 40px 0 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s, opacity 0.3s;
 }
 
 .surface__navigation {
@@ -356,6 +364,15 @@
   align-items: center;
 }
 
+@media screen and (min-width: 1230px) {
+  .surface__navigation {
+    margin-left: 8.33%;
+    margin-top: 51px;
+    position: static;
+    justify-content: flex-start;
+    gap: 49px;
+  }
+}
 .surface__button {
   margin: 0;
   padding: 0;
@@ -370,6 +387,11 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 1230px) {
+  .surface__button {
+    transform: scale(2);
+  }
+}
 .surface__slider-container {
   position: relative;
   overflow: hidden;
@@ -377,7 +399,7 @@
   justify-content: flex-start;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1230px) {
   .surface__slider-container {
     margin-left: 8.33%;
   }
@@ -389,7 +411,7 @@
   flex-shrink: 0;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1230px) {
   .surface__slider {
     width: 157%;
   }
@@ -399,13 +421,15 @@
   padding: 0 17px;
   flex-basis: 100%;
   display: grid;
+  grid-template-rows: 23% 1fr 42%;
   grid-template-areas: "title" "image" "descr";
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1230px) {
   .surface__slide {
     padding: 0 41px 0 0;
     grid-template-columns: 1fr;
+    grid-template-rows: 20% 26% auto;
     grid-template-areas: "title" "descr" "image";
   }
 }
@@ -418,11 +442,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   grid-area: image;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s, opacity 0.3s;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1230px) {
   .surface__flag {
-    top: 86%;
+    top: 82%;
     width: 98px;
     height: 40px;
   }
@@ -432,6 +459,7 @@
   width: 100%;
   aspect-ratio: 284/175;
   align-self: end;
+  grid-area: image;
 }
 
 .surface__descr {
@@ -440,9 +468,12 @@
   color: #222222;
   margin: 38px 0 80px;
   grid-area: descr;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s, opacity 0.3s;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1230px) {
   .surface__descr {
     margin-top: 0;
     margin-bottom: 85px;
@@ -645,6 +676,9 @@
 
 .hidden {
   display: none;
-  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
   opacity: 1;
 }/*# sourceMappingURL=main.css.map */

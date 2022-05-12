@@ -5,7 +5,7 @@
     flex-shrink: 0;
 }
 
-@media screen and (min-width: $main-breakpoint) {
+@media screen and (min-width: $surface-breakpoint) {
     .surface__slider {
         width: 157%;
     }
