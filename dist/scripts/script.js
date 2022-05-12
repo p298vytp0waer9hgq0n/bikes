@@ -48,8 +48,8 @@ surfacePrev.addEventListener('click', (evt) => {
     surfaceSlider.style.transition = 'none'
     surfaceSlider.prepend(surfaceSlider.lastElementChild);
     surfaceSlider.style.transform = 'translate(-33.33%)';
-    setTimeout(() => {surfaceSlider.style.transition = 'all .4s'}, 2);
-    setTimeout(() => {surfaceSlider.style.transform = 'translate(0)'}, 2);
+    setTimeout(() => {surfaceSlider.style.transition = 'all .4s'}, 10);
+    setTimeout(() => {surfaceSlider.style.transform = 'translate(0)'}, 10);
 });
 
 surfaceSlider.addEventListener('transitionstart', (evt) => {
