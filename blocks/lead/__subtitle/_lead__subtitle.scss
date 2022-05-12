@@ -3,3 +3,11 @@
     margin: 38px 0 41px;
     padding: 0;
 }
+
+@media screen and (min-width: $main-breakpoint) {
+    .lead__subtitle {
+        margin-top: 3px;
+        margin-right: 15%;
+        line-height: 1.56;
+    }
+}

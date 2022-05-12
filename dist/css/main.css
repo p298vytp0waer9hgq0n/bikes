@@ -27,8 +27,9 @@
   src: url("../vendor/Inter-Regular.woff2?v=3.19") format("woff2"), url("../vendor/Inter-Regular.woff?v=3.19") format("woff");
 }
 .page {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1440px;
   background-color: #f4f4f4;
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
@@ -47,11 +48,15 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background: #f4f4f4;
+  z-index: 1;
 }
 
 .header__mmbutton {
+  width: 25px;
+  height: 25px;
   padding: 0;
-  background: none;
+  background: #f4f4f4;
   border: none;
 }
 
@@ -107,14 +112,27 @@
   grid-template-areas: "title" "images" "subtitle" "button";
 }
 
+@media screen and (min-width: 700px) {
+  .lead {
+    padding: 23px 0 80px 8.33%;
+    grid-template-columns: 38.5% 1fr;
+    grid-template-areas: "title images" "subtitle images" "button images" "capture images";
+  }
+}
 .lead__title {
-  font-size: 32px;
+  font-size: min(55px, max(3.82vw, 32px));
   line-height: 1.25;
   letter-spacing: -0.5px;
   color: #151515;
   margin: 45px 0 40px;
 }
 
+@media screen and (min-width: 700px) {
+  .lead__title {
+    margin-top: 66px;
+    line-height: 1.09;
+  }
+}
 .lead__bike-card {
   width: 82%;
   grid-area: images;
@@ -125,26 +143,42 @@
   display: block;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 10%;
   width: 100%;
+  max-width: 440px;
   aspect-ratio: initial;
   border-radius: 20px;
+  box-shadow: 0 20px 140px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (min-width: 700px) {
+  .lead__bike-image {
+    box-shadow: 0 20px 140px rgba(0, 0, 0, 0.3);
+  }
+}
 .lead__image {
   width: 89%;
+  max-width: 610px;
+  aspect-ratio: initial;
   grid-area: images;
   justify-self: end;
 }
 
 .lead__subtitle {
-  font-size: 12px;
+  font-size: min(3.75vw, 18px);
   line-height: 1.5;
   color: #222222;
   margin: 38px 0 41px;
   padding: 0;
 }
 
+@media screen and (min-width: 700px) {
+  .lead__subtitle {
+    margin-top: 3px;
+    margin-right: 15%;
+    line-height: 1.56;
+  }
+}
 .lead__button {
   padding: 15px;
   background: #24b47e;
@@ -156,6 +190,11 @@
   border-radius: 4px;
 }
 
+@media screen and (min-width: 700px) {
+  .lead__button {
+    max-width: 180px;
+  }
+}
 .inspiration {
   padding: 21px 17px 0;
   display: grid;
@@ -200,7 +239,7 @@
 }
 
 .surface__title {
-  font-size: 32px;
+  font-size: min(55px, max(3.82vw, 32px));
   line-height: 1.25;
   letter-spacing: -0.5px;
   color: #151515;
@@ -264,7 +303,7 @@
 }
 
 .surface__descr {
-  font-size: 12px;
+  font-size: min(3.75vw, 18px);
   line-height: 1.5;
   color: #222222;
   margin: 38px 0 80px;
@@ -278,7 +317,7 @@
 }
 
 .bykes__title {
-  font-size: 32px;
+  font-size: min(55px, max(3.82vw, 32px));
   line-height: 1.25;
   letter-spacing: -0.5px;
   color: #151515;
@@ -347,11 +386,19 @@
 .bykes__card-container {
   display: flex;
   gap: 17px;
+  width: 300%;
+  flex-shrink: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .bykes__card-container {
+    width: 150%;
+  }
+}
 .bykes__card {
   box-sizing: border-box;
-  min-width: calc(100vw - 34px);
+  flex-basis: 33.33%;
+  flex-shrink: 0;
   margin-top: 19px;
   padding: 15px;
   display: flex;
@@ -393,7 +440,7 @@
 }
 
 .training__title {
-  font-size: 32px;
+  font-size: min(55px, max(3.82vw, 32px));
   line-height: 1.25;
   letter-spacing: -0.5px;
   color: #151515;
@@ -406,7 +453,7 @@
 }
 
 .training__paragraph {
-  font-size: 12px;
+  font-size: min(3.75vw, 18px);
   line-height: 1.5;
   color: #222222;
   margin: 33px 0 10px;

@@ -1,5 +1,7 @@
 .lead__image {
     width: 89%;
+    max-width: 610px;
+    aspect-ratio: initial;
     grid-area: images;
     justify-self: end;
 }
