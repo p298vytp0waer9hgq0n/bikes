@@ -4,3 +4,10 @@
     transition: all .4s;
     flex-shrink: 0;
 }
+
+@media screen and (min-width: $main-breakpoint) {
+    .surface__slider {
+        margin-left: 8.33%;
+        width: 144%;
+    }
+}

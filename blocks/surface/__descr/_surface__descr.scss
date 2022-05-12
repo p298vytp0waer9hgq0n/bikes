@@ -1,6 +1,14 @@
 .surface__descr {
     @include paragraph-style;
     margin: 38px 0 80px;
-    width: 100%;
+    // width: 100%;
     grid-area: descr;
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .surface__descr {
+        margin-top: 0;
+        display: block;
+        padding-right: 10%;
+    }
 }
