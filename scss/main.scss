@@ -6,6 +6,8 @@
 @import '../blocks/header/header';
 @import '../blocks/header/__mmbutton/_header__mmbutton.scss';
 @import '../blocks/header/__nav/header__nav';
+@import '../blocks/header/__nav-list/header__nav-list';
+@import '../blocks/header/__nav-link/header__nav-link';
 
 @import '../blocks/mobile-menu/mobile-menu';
 @import '../blocks/mobile-menu/__closebtn/mobile-menu__closebtn';
@@ -19,6 +21,8 @@
 @import '../blocks/lead/__image/lead__image';
 @import '../blocks/lead/__subtitle/lead__subtitle';
 @import '../blocks/lead/__button/lead__button';
+@import '../blocks/lead/__caption-container/lead__caption-container';
+@import '../blocks/lead/__caption-line/lead__caption-line';
 
 @import '../blocks/inspiration/inspiration';
 @import '../blocks/inspiration/__image/inspiration__image';

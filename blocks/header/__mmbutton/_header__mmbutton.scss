@@ -5,3 +5,9 @@
     background: $color-bg;
     border: none;
 }
+
+@media screen and (min-width: $main-breakpoint) {
+    .header__mmbutton {
+        display: none;
+    }
+}

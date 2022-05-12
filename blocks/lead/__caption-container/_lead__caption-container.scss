@@ -1,0 +1,14 @@
+.lead__caption-container {
+    display: none;
+    height: min-content;
+    margin: 33% 0; 
+    grid-area: capt;
+    align-items: center;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 1050px) {
+    .lead__caption-container {
+        display: flex;
+    }
+}

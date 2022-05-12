@@ -11,6 +11,8 @@
 
 @media screen and (min-width: $main-breakpoint) {
     .lead__button {
+        padding: 17px;
         max-width: 180px;
+        font-size: 14px;
     }
 }

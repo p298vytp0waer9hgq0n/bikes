@@ -12,10 +12,11 @@
     .lead {
         padding: 23px 0 80px 8.33%;
         grid-template-columns: 38.5% 1fr;
+        grid-template-rows: auto auto auto 1fr;
         grid-template-areas: 
             "title images"
             "subtitle images"
             "button images"
-            "capture images";
+            "capt images";
     }
 }
