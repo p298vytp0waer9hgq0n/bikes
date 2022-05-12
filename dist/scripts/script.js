@@ -73,12 +73,12 @@ surfaceSlider.addEventListener('transitionend', (evt) => {
     }
 })
 
-const bikesDDButton = document.querySelector('.bykes__dropdown-button');
-const bikesListArrow = document.querySelector('.bykes__dropdown-icon');
-const bikesButtonText = document.querySelector('.bykes__dropdown-text');
-const bikesDDList = document.querySelector('.bykes__dropdown-list');
-const bikesDDElements = Array.from(document.querySelectorAll('.bykes__ddlist-element'));
-const bikesSliders = Array.from(document.querySelectorAll('.bykes__card-container'));
+const bikesDDButton = document.querySelector('.bikes__dropdown-button');
+const bikesListArrow = document.querySelector('.bikes__dropdown-icon');
+const bikesButtonText = document.querySelector('.bikes__dropdown-text');
+const bikesDDList = document.querySelector('.bikes__dropdown-list');
+const bikesDDElements = Array.from(document.querySelectorAll('.bikes__ddlist-element'));
+const bikesSliders = Array.from(document.querySelectorAll('.bikes__card-container'));
 
 bikesDDButton.addEventListener('click', () => {
     if (bikesDDList.style.display === 'flex') {

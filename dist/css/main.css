@@ -481,12 +481,12 @@
     padding-right: 29%;
   }
 }
-.bykes {
+.bikes {
   padding: 0 17px 80px;
   overflow: hidden;
 }
 
-.bykes__title {
+.bikes__title {
   font-size: min(55px, max(3.82vw, 32px));
   line-height: 1.25;
   letter-spacing: -0.5px;
@@ -494,7 +494,7 @@
   margin: 40px 0 40px;
 }
 
-.bykes__dropdown-container {
+.bikes__dropdown-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -503,7 +503,7 @@
   width: min-content;
 }
 
-.bykes__dropdown-button {
+.bikes__dropdown-button {
   min-width: 114px;
   padding: 8px;
   display: flex;
@@ -514,14 +514,14 @@
   cursor: pointer;
 }
 
-.bykes__dropdown-text {
+.bikes__dropdown-text {
   font-size: 11px;
   font-weight: 600;
   margin: 0 0 0 5px;
   padding: 0;
 }
 
-.bykes__dropdown-icon {
+.bikes__dropdown-icon {
   margin: 1px 2px 0 0;
   display: inline-block;
   width: 12px;
@@ -529,7 +529,7 @@
   background: url("../img/button-dropdown.svg") no-repeat;
 }
 
-.bykes__dropdown-list {
+.bikes__dropdown-list {
   display: none;
   margin: 0;
   padding: 0;
@@ -542,18 +542,18 @@
   list-style: none;
 }
 
-.bykes__ddlist-element {
+.bikes__ddlist-element {
   padding: 7px 0 7px 14px;
   font-size: 11px;
   font-weight: 600;
   cursor: pointer;
 }
 
-.bykes__ddlist-element:hover {
+.bikes__ddlist-element:hover {
   opacity: 0.75;
 }
 
-.bykes__card-container {
+.bikes__card-container {
   display: flex;
   gap: 17px;
   width: 300%;
@@ -561,11 +561,11 @@
 }
 
 @media screen and (min-width: 480px) {
-  .bykes__card-container {
+  .bikes__card-container {
     width: 150%;
   }
 }
-.bykes__card {
+.bikes__card {
   box-sizing: border-box;
   flex-basis: 33.33%;
   flex-shrink: 0;
@@ -578,27 +578,27 @@
   box-shadow: 0 20px 140px rgba(0, 0, 0, 0.06);
 }
 
-.bykes__image {
+.bikes__image {
   width: 100%;
   aspect-ratio: initial;
   border-radius: 20px;
 }
 
-.bykes__capture {
+.bikes__capture {
   margin: 2px 0 2px;
   font-size: 14px;
   font-weight: 600;
   color: #151515;
 }
 
-.bykes__navigation {
+.bikes__navigation {
   margin-top: 20px;
   display: flex;
   gap: 5px;
   justify-content: center;
 }
 
-.bykes__nav-element {
+.bikes__nav-element {
   width: 4px;
   height: 4px;
   border-radius: 50%;

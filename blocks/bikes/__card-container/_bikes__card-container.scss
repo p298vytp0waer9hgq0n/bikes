@@ -1,4 +1,4 @@
-.bykes__card-container {
+.bikes__card-container {
     display: flex;
     gap: 17px;
     width: 300%;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (min-width: 480px) {
-    .bykes__card-container {
+    .bikes__card-container {
         width: 150%;
     }
 }
