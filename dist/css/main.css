@@ -337,7 +337,7 @@
   position: relative;
 }
 
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1030px) {
   .surface {
     padding-top: 79px;
   }
@@ -364,7 +364,7 @@
   align-items: center;
 }
 
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1030px) {
   .surface__navigation {
     margin-left: 8.33%;
     margin-top: 51px;
@@ -387,7 +387,7 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1030px) {
   .surface__button {
     transform: scale(2);
   }
@@ -399,7 +399,7 @@
   justify-content: flex-start;
 }
 
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1030px) {
   .surface__slider-container {
     margin-left: 8.33%;
   }
@@ -411,7 +411,7 @@
   flex-shrink: 0;
 }
 
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1030px) {
   .surface__slider {
     width: 157%;
   }
@@ -425,7 +425,7 @@
   grid-template-areas: "title" "image" "descr";
 }
 
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1030px) {
   .surface__slide {
     padding: 0 41px 0 0;
     grid-template-columns: 1fr;
@@ -447,7 +447,7 @@
   transition: visibility 0.4s, opacity 0.3s;
 }
 
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1030px) {
   .surface__flag {
     top: 82%;
     width: 98px;
@@ -473,7 +473,7 @@
   transition: visibility 0.4s, opacity 0.3s;
 }
 
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1030px) {
   .surface__descr {
     margin-top: 0;
     margin-bottom: 85px;
@@ -482,18 +482,28 @@
   }
 }
 .bikes {
-  padding: 0 17px 80px;
-  overflow: hidden;
+  padding: 0 0 80px;
+  overflow-x: hidden;
 }
 
+@media screen and (min-width: 1030px) {
+  .bikes {
+    padding-top: 92px;
+  }
+}
 .bikes__title {
   font-size: min(55px, max(3.82vw, 32px));
   line-height: 1.25;
   letter-spacing: -0.5px;
   color: #151515;
-  margin: 40px 0 40px;
+  margin: 40px 0 40px 17px;
 }
 
+@media screen and (min-width: 1030px) {
+  .bikes__title {
+    margin: 40px 0 40px 8.33%;
+  }
+}
 .bikes__dropdown-container {
   position: relative;
   display: flex;
@@ -503,7 +513,15 @@
   width: min-content;
 }
 
+/*
+@media screen and (min-width: $surface-breakpoint) {
+    .bikes__dropdown-container {
+        width: 100%;
+    }
+}
+*/
 .bikes__dropdown-button {
+  margin-left: 17px;
   min-width: 114px;
   padding: 8px;
   display: flex;
@@ -514,6 +532,11 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 1030px) {
+  .bikes__dropdown-button {
+    display: none;
+  }
+}
 .bikes__dropdown-text {
   font-size: 11px;
   font-weight: 600;
@@ -542,6 +565,20 @@
   list-style: none;
 }
 
+/*
+@media screen and (min-width: $surface-breakpoint) {
+    .bikes__dropdown-list {
+        display: flex;
+        width: min-content;
+        flex-direction: row;
+        gap: 26px;
+        top: -83px;
+        left: auto;
+        right: $desktop-margin;
+        background: none;
+    }
+}
+*/
 .bikes__ddlist-element {
   padding: 7px 0 7px 14px;
   font-size: 11px;
@@ -553,9 +590,19 @@
   opacity: 0.75;
 }
 
+/*
+@media screen and (min-width: $surface-breakpoint) {
+    .bikes__ddlist-element {
+        font-size: 18px;
+    }
+}
+*/
 .bikes__card-container {
+  box-sizing: border-box;
+  padding: 0 17px;
   display: flex;
-  gap: 17px;
+  height: 100%;
+  gap: 34px;
   width: 300%;
   flex-shrink: 0;
 }
@@ -565,11 +612,16 @@
     width: 150%;
   }
 }
+@media screen and (min-width: 1030px) {
+  .bikes__card-container {
+    width: 100%;
+    padding: 54px 8.33%;
+  }
+}
 .bikes__card {
   box-sizing: border-box;
-  flex-basis: 33.33%;
-  flex-shrink: 0;
-  margin-top: 19px;
+  flex-basis: 100%;
+  margin: 19px 0;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -605,6 +657,11 @@
   background: #151515;
 }
 
+@media screen and (min-width: 1030px) {
+  .bikes__nav-element {
+    display: none;
+  }
+}
 .training {
   padding: 13px 17px 10px;
 }

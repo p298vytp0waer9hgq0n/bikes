@@ -1,4 +1,10 @@
 .bikes {
-    padding: 0 17px 80px;
-    overflow: hidden;
+    padding: 0 0 80px;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: $surface-breakpoint) {
+    .bikes {
+        padding-top: 92px;
+    }
 }

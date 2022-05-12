@@ -38,38 +38,41 @@ function toggleButtons (a) {
 let direction = 0;
 
 surfaceNext.addEventListener('click', function (evt) {
-        direction = 1;
-        toggleVisibility(surfaceSlider.children[0]);
-        surfaceSlider.style.transform = 'translate(-33.33%)';
-    });
+    toggleButtons('off');
+    direction = 1;
+    toggleVisibility(surfaceSlider.children[0]);
+    surfaceSlider.style.transform = 'translate(-33.33%)';
+});
 
 surfacePrev.addEventListener('click', (evt) => {
+    toggleButtons('off');
+    direction = -1;
     toggleVisibility(surfaceSlider.children[0]);
     surfaceSlider.style.transition = 'none'
     surfaceSlider.prepend(surfaceSlider.lastElementChild);
     surfaceSlider.style.transform = 'translate(-33.33%)';
-    setTimeout(() => {surfaceSlider.style.transition = 'all .4s'}, 10);
-    setTimeout(() => {surfaceSlider.style.transform = 'translate(0)'}, 10);
+    setTimeout(() => {surfaceSlider.style.transition = 'all .4s'}, 20);
+    setTimeout(() => {surfaceSlider.style.transform = 'translate(0)'}, 20);
 });
 
-surfaceSlider.addEventListener('transitionstart', (evt) => {
+/* surfaceSlider.addEventListener('transitionstart', (evt) => {
     if (evt.target === surfaceSlider) {
-         toggleButtons('off');
     }
-});
+}); */
 
 surfaceSlider.addEventListener('transitionend', (evt) => {
     evt.stopPropagation();
+    if (direction === 0) return;
     if (evt.target === surfaceSlider) {
         if (direction === 1) {
             surfaceSlider.style.transition = 'none';
             surfaceSlider.appendChild(surfaceSlider.firstElementChild);
             surfaceSlider.style.transform = 'translate(0)';
             setTimeout(() => {surfaceSlider.style.transition = 'all .4s';}, 1);
-            direction = 0;
         }
         toggleVisibility(surfaceSlider.children[0]);
         toggleButtons('on');
+        direction = 0;
     }
 })
 
@@ -96,7 +99,6 @@ for (const bindex in bikesDDElements) {
         bikesDDList.style.display = 'none';
         bikesListArrow.style.transform = 'none';
         for (const slindex in bikesSliders) {
-            // console.log(bikesSliders[bindex]);
             if (slindex === bindex) {
                 bikesSliders[slindex].classList.remove('hidden');
             } else {

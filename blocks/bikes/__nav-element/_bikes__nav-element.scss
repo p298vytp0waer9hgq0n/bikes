@@ -4,3 +4,9 @@
     border-radius: 50%;
     background: #151515;
 }
+
+@media screen and (min-width: $surface-breakpoint) {
+    .bikes__nav-element {
+        display: none;
+    }
+}

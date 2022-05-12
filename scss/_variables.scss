@@ -2,10 +2,11 @@ $color-bg: #f4f4f4;
 $color-title: #151515;
 $color-paragraph: #222222;
 
+$mobile-margin: 17px;
 $desktop-margin: 8.33%;
 
 $main-breakpoint: 700px;
-$surface-breakpoint: 1230px;
+$surface-breakpoint: 1030px;
 
 @mixin title-style {
     font-size: min(55px, max(3.82vw, 32px));

@@ -10,3 +10,17 @@
     background: #ebebeb;
     list-style: none;
 }
+/*
+@media screen and (min-width: $surface-breakpoint) {
+    .bikes__dropdown-list {
+        display: flex;
+        width: min-content;
+        flex-direction: row;
+        gap: 26px;
+        top: -83px;
+        left: auto;
+        right: $desktop-margin;
+        background: none;
+    }
+}
+*/
