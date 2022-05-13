@@ -5,5 +5,7 @@
     width: 32px;
     height: 32px;
     border: none;
-    background: url('../img/close.svg') center / cover no-repeat;
+    color: var(--color-title);
+    background: none;
+    // background: url('../img/close.svg') center / cover no-repeat;
 }

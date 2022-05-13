@@ -1,0 +1,10 @@
+.theme-switcher__switch {
+    box-sizing: border-box;
+    position: relative;
+    padding: 2px;
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    background: var(--color-bg-switch);
+    cursor: pointer;
+}

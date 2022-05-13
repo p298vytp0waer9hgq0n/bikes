@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -18,9 +18,9 @@
                 <li><a class="header__nav-link" href="#training">Тренировки</a></li>
             </ul>
         </nav>
-        <button class="header__mmbutton" type="button"><svg width="22" height="19" fill="none"
+        <button class="header__mmbutton" type="button"><svg width="22" height="19" stroke="currentColor" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 1.5h22m-22 8h22m-22 8h22" stroke="#151515" stroke-width="3" />
+                <path d="M0 1.5h22m-22 8h22m-22 8h22" stroke-width="3" />
             </svg></button>
     </header>
 
@@ -88,7 +88,7 @@
             <div class="bikes__dropdown-container">
                 <button class="bikes__dropdown-button" type="button">
                     <p class="bikes__dropdown-text">Шоссе</p>
-                    <div class="bikes__dropdown-icon"></div>
+                    <div class="bikes__dropdown-icon"><svg width="12" height="7" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1 1 5 4.5L11 1" stroke-width="1.2"/></svg></div>
                 </button>
                 <ul class="bikes__dropdown-list">
                     <li class="bikes__ddlist-element bikes__ddlist-element_active">Шоссе</li>
@@ -161,16 +161,27 @@
     <footer class="footer">
         <h1 class="footer__title">Подпишитесь на рассылку —</h1>
         <input type="text" class="footer__input">
-        <p class="footer__copyright">© Road Club 2021</p>
+        <div class="footer__tail-container">
+            <p class="footer__copyright">© Road Club 2021</p>
+            <div class="theme-switcher">
+                <div class="theme-switcher__light-icon"><svg width="28" height="28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 0a1.4 1.4 0 0 1 1.4 1.4v1.4a1.4 1.4 0 0 1-2.8 0V1.4A1.4 1.4 0 0 1 14 0ZM4.1 4.1a1.4 1.4 0 0 1 1.98 0l.99.99a1.4 1.4 0 1 1-1.98 1.98l-.99-.99a1.4 1.4 0 0 1 0-1.98Zm19.8 0a1.4 1.4 0 0 1 0 1.98l-.99.99a1.4 1.4 0 0 1-1.98-1.98l.99-.99a1.4 1.4 0 0 1 1.98 0ZM7 14a7 7 0 1 1 14 0 7 7 0 0 1-14 0Zm-7 0a1.4 1.4 0 0 1 1.4-1.4h1.4a1.4 1.4 0 1 1 0 2.8H1.4A1.4 1.4 0 0 1 0 14Zm23.8 0a1.4 1.4 0 0 1 1.4-1.4h1.4a1.4 1.4 0 1 1 0 2.8h-1.4a1.4 1.4 0 0 1-1.4-1.4Zm-2.87 6.93a1.399 1.399 0 0 1 1.98 0l.99.99a1.401 1.401 0 0 1-1.526 2.283 1.401 1.401 0 0 1-.454-.303l-.99-.99a1.399 1.399 0 0 1 0-1.98Zm-15.84 0a1.4 1.4 0 1 1 1.98 1.98l-.99.99a1.4 1.4 0 0 1-1.98-1.98l.99-.99ZM14 23.8a1.4 1.4 0 0 1 1.4 1.4v1.4a1.4 1.4 0 1 1-2.8 0v-1.4a1.4 1.4 0 0 1 1.4-1.4Z"/></svg></div>
+                <div class="theme-switcher__switch"><div class="theme-switcher__pip"></div></div>
+                <div class="theme-switcher__dark-icon"><svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.353.939a1 1 0 0 1 .22 1.08 8 8 0 0 0 10.408 10.408 1 1 0 0 1 1.301 1.3A10.004 10.004 0 0 1 10 20C4.477 20 0 15.523 0 10 0 5.793 2.598 2.195 6.273.718a1 1 0 0 1 1.08.22Z"/></svg></div>
+            </div>
+        </div>
     </footer>
     <div class="mobile-menu hidden">
-        <button class="mobile-menu__closebtn" aria-label="Закрыть"></button>
+        <button class="mobile-menu__closebtn" aria-label="Закрыть"><svg width="32" height="33" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke-width="3" d="m8.222 8.722 15.556 15.556M8.222 24.278 23.778 8.722"/></svg></button>
         <nav class="mobile-menu__navigation">
             <a href="#surface" class="mobile-menu__link">Покрытия и градиенты</a>
             <a href="#bikes" class="mobile-menu__link">Велосипеды</a>
             <a href="#training" class="mobile-menu__link">Тренировки</a>
         </nav>
-        <div class="mobile-menu__theme-switch"></div>
+        <div class="theme-switcher theme-switcher_mobile">
+            <div class="theme-switcher__light-icon"><svg width="28" height="28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 0a1.4 1.4 0 0 1 1.4 1.4v1.4a1.4 1.4 0 0 1-2.8 0V1.4A1.4 1.4 0 0 1 14 0ZM4.1 4.1a1.4 1.4 0 0 1 1.98 0l.99.99a1.4 1.4 0 1 1-1.98 1.98l-.99-.99a1.4 1.4 0 0 1 0-1.98Zm19.8 0a1.4 1.4 0 0 1 0 1.98l-.99.99a1.4 1.4 0 0 1-1.98-1.98l.99-.99a1.4 1.4 0 0 1 1.98 0ZM7 14a7 7 0 1 1 14 0 7 7 0 0 1-14 0Zm-7 0a1.4 1.4 0 0 1 1.4-1.4h1.4a1.4 1.4 0 1 1 0 2.8H1.4A1.4 1.4 0 0 1 0 14Zm23.8 0a1.4 1.4 0 0 1 1.4-1.4h1.4a1.4 1.4 0 1 1 0 2.8h-1.4a1.4 1.4 0 0 1-1.4-1.4Zm-2.87 6.93a1.399 1.399 0 0 1 1.98 0l.99.99a1.401 1.401 0 0 1-1.526 2.283 1.401 1.401 0 0 1-.454-.303l-.99-.99a1.399 1.399 0 0 1 0-1.98Zm-15.84 0a1.4 1.4 0 1 1 1.98 1.98l-.99.99a1.4 1.4 0 0 1-1.98-1.98l.99-.99ZM14 23.8a1.4 1.4 0 0 1 1.4 1.4v1.4a1.4 1.4 0 1 1-2.8 0v-1.4a1.4 1.4 0 0 1 1.4-1.4Z"/></svg></div>
+            <div class="theme-switcher__switch"><div class="theme-switcher__pip"></div></div>
+            <div class="theme-switcher__dark-icon"><svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.353.939a1 1 0 0 1 .22 1.08 8 8 0 0 0 10.408 10.408 1 1 0 0 1 1.301 1.3A10.004 10.004 0 0 1 10 20C4.477 20 0 15.523 0 10 0 5.793 2.598 2.195 6.273.718a1 1 0 0 1 1.08.22Z"/></svg></div>
+        </div>
     </div>    
     <script src="./scripts/script.js"></script>
 </body>

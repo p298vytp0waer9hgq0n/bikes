@@ -90,7 +90,7 @@ bikesDDButton.addEventListener('click', () => {
         bikesListArrow.style.transform = 'none'
     } else {
         bikesDDList.style.display = 'flex';
-        bikesListArrow.style.transform = 'scale(-1) translate(0, 5px)'
+        bikesListArrow.style.transform = 'scale(-1)';
     }
 });
 

@@ -1,6 +1,6 @@
 .footer__input {
     box-sizing: border-box;
-    margin-bottom: 101px;
+    margin-bottom: 87px;
     padding: 2px 0 0 20px;
     width: 100%;
     max-width: 360px;
@@ -8,7 +8,7 @@
     display: flex;
     font-size: 13px;
     font-weight: 500;
-    border: 1px solid rgba(199, 199, 199, 0.5);
+    border: 1px solid var(--color-br-input);
     border-radius: 4px;
     background: none;
 }
