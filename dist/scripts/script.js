@@ -41,6 +41,7 @@ surfaceNext.addEventListener('click', function (evt) {
     toggleButtons('off');
     direction = 1;
     toggleVisibility(surfaceSlider.children[0]);
+    toggleVisibility(surfaceSlider.children[1]);
     surfaceSlider.style.transform = 'translate(-33.33%)';
 });
 
@@ -48,6 +49,7 @@ surfacePrev.addEventListener('click', (evt) => {
     toggleButtons('off');
     direction = -1;
     toggleVisibility(surfaceSlider.children[0]);
+    toggleVisibility(surfaceSlider.lastElementChild);
     surfaceSlider.style.transition = 'none'
     surfaceSlider.prepend(surfaceSlider.lastElementChild);
     surfaceSlider.style.transform = 'translate(-33.33%)';
@@ -70,7 +72,6 @@ surfaceSlider.addEventListener('transitionend', (evt) => {
             surfaceSlider.style.transform = 'translate(0)';
             setTimeout(() => {surfaceSlider.style.transition = 'all .4s';}, 1);
         }
-        toggleVisibility(surfaceSlider.children[0]);
         toggleButtons('on');
         direction = 0;
     }
@@ -85,7 +86,7 @@ const bikesSliders = Array.from(document.querySelectorAll('.bikes__card-containe
 
 bikesDDButton.addEventListener('click', () => {
     if (bikesDDList.style.display === 'flex') {
-        bikesDDList.style.display = 'none';
+        bikesDDList.style.display = '';
         bikesListArrow.style.transform = 'none'
     } else {
         bikesDDList.style.display = 'flex';
@@ -96,13 +97,15 @@ bikesDDButton.addEventListener('click', () => {
 for (const bindex in bikesDDElements) {
     bikesDDElements[bindex].addEventListener('click', (evt) => {
         bikesButtonText.textContent = bikesDDElements[bindex].textContent;
-        bikesDDList.style.display = 'none';
+        if (window.innerWidth < 1030) bikesDDList.style.display = '';
         bikesListArrow.style.transform = 'none';
         for (const slindex in bikesSliders) {
             if (slindex === bindex) {
                 bikesSliders[slindex].classList.remove('hidden');
+                bikesDDElements[slindex].classList.add('bikes__ddlist-element_active');
             } else {
                 bikesSliders[slindex].classList.add('hidden');
+                bikesDDElements[slindex].classList.remove('bikes__ddlist-element_active');
             }
         }
     })

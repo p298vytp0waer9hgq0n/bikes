@@ -4,3 +4,12 @@
     font-weight: 600;
     color: $color-title;
 }
+
+@media screen and (min-width: $surface-breakpoint) {
+    .bikes__capture {
+        position: absolute;
+        bottom: -46px;
+        left: 5px;
+        font-size: min(18px, 1.25vw);
+    }
+}

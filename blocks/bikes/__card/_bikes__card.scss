@@ -10,3 +10,9 @@
     border-radius: 20px;
     box-shadow: 0 20px 140px rgba(0, 0, 0, 0.06);
 }
+
+@media screen and (min-width: $surface-breakpoint) {
+    .bikes__card {
+        position: relative;
+    }
+}
