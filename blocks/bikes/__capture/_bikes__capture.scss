@@ -2,7 +2,7 @@
     margin: 2px 0 2px;
     font-size: 14px;
     font-weight: 600;
-    color: $color-title;
+    color: var(--color-title);
 }
 
 @media screen and (min-width: $secondary-breakpoint) {

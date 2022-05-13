@@ -3,7 +3,7 @@
     font-size: 14px;
     line-height: 1.57;
     font-weight: 500;
-    color: $color-title;
+    color: var(--color-title);
 }
 
 @media screen and (min-width: $main-breakpoint) {

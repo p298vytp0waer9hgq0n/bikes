@@ -1,5 +1,6 @@
 @import 'fonts', 'variables';
 @import '../blocks/page/page';
+@import '../blocks/page/_dark-theme/page_dark-theme';
 
 @import '../blocks/separator/separator';
 
@@ -69,7 +70,6 @@
 @import '../blocks/footer/__title/footer__title';
 @import '../blocks/footer/__input/footer__input';
 @import '../blocks/footer/__copyright/footer__copyright';
-
 
 @import '../blocks/hidden/hidden';
 @import '../blocks/visible/visible';

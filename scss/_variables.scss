@@ -1,6 +1,21 @@
+:root {
+    --color-bg: #f4f4f4;
+    --color-title: #151515;
+    --color-paragraph: #222;
+    --color-bg-button: #ebebeb;
+    --color-capt-line: #d7d4d4;
+    --color-bg-footer: #efefef;
+    --color-copyright: #cfcfcf;
+    --card-shadow: 0 20px 140px rgba(0, 0, 0, 0.06);
+}
+
 $color-bg: #f4f4f4;
 $color-title: #151515;
 $color-paragraph: #222222;
+
+$color-bg-dark: #333;
+$color-title-dark: #fff;
+$color-paragraph-dark: #e5e5e5;
 
 $mobile-margin: 17px;
 $desktop-margin: 8.33%;
@@ -12,11 +27,11 @@ $secondary-breakpoint: 1030px;
     font-size: min(55px, max(3.82vw, 32px));
     line-height: 1.25;
     letter-spacing: -0.5px;
-    color: $color-title;
+    color: var(--color-title);
 }
 
 @mixin paragraph-style {
     font-size: min(3.75vw, 18px);
     line-height: 1.5;
-    color: $color-paragraph;
+    color: var(--color-paragraph);
 }

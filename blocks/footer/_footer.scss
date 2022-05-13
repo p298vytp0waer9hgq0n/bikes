@@ -1,10 +1,11 @@
 .footer {
     padding: 10px $mobile-margin 10px;
-    
+    background-color: var(--color-bg-footer);
+    // border-top: 1px solid limegreen;
 }
 
 @media screen and (min-width: $main-breakpoint) {
     .footer {
-        padding: 99px $desktop-margin 10px;
+        padding: 82px $desktop-margin 48px;
     }
 }

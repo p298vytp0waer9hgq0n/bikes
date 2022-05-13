@@ -4,7 +4,7 @@
     line-height: 1.26;
     letter-spacing: -0.5px;
     grid-area: quote;
-    color: $color-title;
+    color: var(--color-title);
 }
 
 @media screen and (min-width: $main-breakpoint) {
