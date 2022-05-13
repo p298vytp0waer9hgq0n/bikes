@@ -5,7 +5,7 @@
     justify-content: flex-start;
 }
 
-@media screen and (min-width: $surface-breakpoint) {
+@media screen and (min-width: $secondary-breakpoint) {
     .surface__slider-container {
         margin-left: 8.33%;
     }

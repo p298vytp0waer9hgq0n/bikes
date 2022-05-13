@@ -10,7 +10,7 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: $surface-breakpoint) {
+@media screen and (min-width: $secondary-breakpoint) {
     .bikes__dropdown-button {
         display: none;
     }

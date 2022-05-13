@@ -5,7 +5,7 @@
     color: $color-title;
 }
 
-@media screen and (min-width: $surface-breakpoint) {
+@media screen and (min-width: $secondary-breakpoint) {
     .bikes__capture {
         position: absolute;
         bottom: -46px;

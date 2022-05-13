@@ -10,7 +10,7 @@
         "descr";
 }
 
-@media screen and (min-width: $surface-breakpoint) {
+@media screen and (min-width: $secondary-breakpoint) {
     .surface__slide {
         padding: 0 41px 0 0;
         grid-template-columns: 1fr;

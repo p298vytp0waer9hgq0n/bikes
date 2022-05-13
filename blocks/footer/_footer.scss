@@ -1,3 +1,10 @@
 .footer {
-    padding: 10px 17px 10px;
+    padding: 10px $mobile-margin 10px;
+    
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .footer {
+        padding: 99px $desktop-margin 10px;
+    }
 }

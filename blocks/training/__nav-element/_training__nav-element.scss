@@ -5,3 +5,9 @@
     color: $color-title;
     text-decoration: none;
 }
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .training__nav-element {
+        font-size: 18px;
+    }
+}

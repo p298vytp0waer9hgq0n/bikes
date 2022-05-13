@@ -248,7 +248,7 @@
   font-size: 18px;
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1030px) {
   .lead__caption-container {
     display: flex;
   }
@@ -659,12 +659,16 @@
   }
 }
 .bikes__navigation {
-  margin-top: 20px;
   display: flex;
   gap: 5px;
   justify-content: center;
 }
 
+@media screen and (min-width: 1030px) {
+  .bikes__navigation {
+    display: none;
+  }
+}
 .bikes__nav-element {
   width: 4px;
   height: 4px;
@@ -672,41 +676,72 @@
   background: #151515;
 }
 
-@media screen and (min-width: 1030px) {
-  .bikes__nav-element {
-    display: none;
-  }
-}
 .training {
   padding: 13px 17px 10px;
+  display: grid;
+  grid-template-areas: "title" "image" "par" "links";
 }
 
+@media screen and (min-width: 700px) {
+  .training {
+    padding: 13px 8.33% 10px;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .training {
+    padding-top: 102px;
+    grid-template-columns: 1fr 48.4%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "title image" "par image" "links image";
+  }
+}
 .training__title {
   font-size: min(55px, max(3.82vw, 32px));
   line-height: 1.25;
   letter-spacing: -0.5px;
   color: #151515;
   margin: 26px 0 40px;
+  grid-area: title;
 }
 
+@media screen and (min-width: 1030px) {
+  .training__title {
+    margin: 0 0 1px;
+  }
+}
 .training__image {
   width: 100%;
   aspect-ratio: initial;
+  grid-area: image;
 }
 
 .training__paragraph {
   font-size: min(3.75vw, 18px);
   line-height: 1.5;
   color: #222222;
-  margin: 33px 0 10px;
+  margin: 38px 0 10px;
+  grid-area: par;
 }
 
+@media screen and (min-width: 1030px) {
+  .training__paragraph {
+    padding-right: 25%;
+    line-height: 1.56;
+  }
+}
 .training__navigation {
-  margin: 40px 0 10px;
+  margin: 30px 0 10px;
   display: flex;
   gap: 31px;
+  grid-area: links;
 }
 
+@media screen and (min-width: 1030px) {
+  .training__navigation {
+    align-self: flex-end;
+    margin-bottom: 5px;
+  }
+}
 .training__nav-element {
   font-size: 14px;
   font-weight: 600;
@@ -715,22 +750,39 @@
   text-decoration: none;
 }
 
+@media screen and (min-width: 1030px) {
+  .training__nav-element {
+    font-size: 18px;
+  }
+}
 .footer {
   padding: 10px 17px 10px;
 }
 
+@media screen and (min-width: 700px) {
+  .footer {
+    padding: 99px 8.33% 10px;
+  }
+}
 .footer__title {
   margin: 92px 0 38px;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.33;
+  max-width: 229px;
 }
 
+@media screen and (min-width: 700px) {
+  .footer__title {
+    margin-bottom: 49px;
+  }
+}
 .footer__input {
   box-sizing: border-box;
   margin-bottom: 101px;
   padding: 2px 0 0 20px;
   width: 100%;
+  max-width: 360px;
   min-height: 50px;
   display: flex;
   font-size: 13px;

@@ -3,4 +3,11 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 1.33;
+    max-width: 229px;
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .footer__title {
+        margin-bottom: 49px;
+    }
 }

@@ -12,7 +12,7 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: $surface-breakpoint) {
+@media screen and (min-width: $secondary-breakpoint) {
     .surface__button {
         transform: scale(2);
 

@@ -11,7 +11,7 @@
     list-style: none;
 }
 
-@media screen and (min-width: $surface-breakpoint) {
+@media screen and (min-width: $secondary-breakpoint) {
     .bikes__dropdown-list {
         display: flex;
         width: min-content;

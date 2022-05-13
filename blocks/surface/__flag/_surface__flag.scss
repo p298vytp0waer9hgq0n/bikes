@@ -12,7 +12,7 @@
     transition: visibility .4s, opacity .3s;
 }
 
-@media screen and (min-width: $surface-breakpoint) {
+@media screen and (min-width: $secondary-breakpoint) {
     .surface__flag {
         top: 82%;
         width: 98px;

@@ -3,7 +3,7 @@
     margin: 40px 0 40px 17px;
 }
 
-@media screen and (min-width: $surface-breakpoint) {
+@media screen and (min-width: $secondary-breakpoint) {
     .bikes__title {
         margin: 40px 0 40px $desktop-margin;
     }

@@ -2,7 +2,7 @@
     position: relative;
 }
 
-@media screen and (min-width: $surface-breakpoint) {
+@media screen and (min-width: $secondary-breakpoint) {
     .surface {
         padding-top: 79px;
     }

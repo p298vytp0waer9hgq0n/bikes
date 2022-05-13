@@ -8,7 +8,7 @@
     transition: visibility .4s, opacity .3s;
 }
 
-@media screen and (min-width: $surface-breakpoint) {
+@media screen and (min-width: $secondary-breakpoint) {
     .surface__descr {
         margin-top: 0;
         margin-bottom: 85px;
