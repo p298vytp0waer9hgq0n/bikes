@@ -1,0 +1,15 @@
+.footer__title {
+    margin: 82px 0 38px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.33;
+    max-width: 229px;
+    color: var(--color-title);
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .footer__title {
+        margin-top: 0;
+        margin-bottom: 49px;
+    }
+}

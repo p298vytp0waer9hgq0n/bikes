@@ -1,0 +1,10 @@
+.bikes {
+    padding: 0 0 80px;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .bikes {
+        padding-top: 92px;
+    }
+}

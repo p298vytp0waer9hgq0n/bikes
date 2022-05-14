@@ -1,0 +1,11 @@
+.lead__title {
+    @include title-style;
+    margin: 45px 0 40px;
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .lead__title {
+        margin-top: 1.2em;
+        line-height: 1.09;
+    }
+}

@@ -1,0 +1,14 @@
+.header__mmbutton {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    background: none;
+    color: var(--color-title);
+    border: none;
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .header__mmbutton {
+        display: none;
+    }
+}

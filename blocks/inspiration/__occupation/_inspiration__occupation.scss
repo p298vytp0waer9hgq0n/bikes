@@ -1,0 +1,12 @@
+.inspiration__occupation {
+    margin: 0;
+    font-size: 10px;
+    line-height: 1.6;
+    color: var(--color-paragraph);
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .inspiration__occupation {
+        font-size: 16px;
+    }
+}

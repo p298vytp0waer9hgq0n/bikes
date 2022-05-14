@@ -1,0 +1,23 @@
+.surface__slide {
+    position: relative;
+    padding: 0 17px;
+    flex-basis: 100%;
+    display: grid;
+    grid-template-rows: 23% 1fr 42%;
+    grid-template-areas:
+        "title"
+        "image"
+        "descr";
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .surface__slide {
+        padding: 0 41px 0 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 26% auto;
+        grid-template-areas:
+            "title"
+            "descr"
+            "image";
+    }
+}

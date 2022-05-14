@@ -1,0 +1,11 @@
+.training__title {
+    @include title-style;
+    margin: 26px 0 40px;
+    grid-area: title;
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .training__title {
+        margin: 0 0 1px;
+    }
+}

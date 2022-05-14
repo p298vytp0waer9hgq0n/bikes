@@ -1,0 +1,12 @@
+.bikes__dropdown-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .bikes__dropdown-container {
+        width: 100%;
+    }
+}

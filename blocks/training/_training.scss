@@ -1,0 +1,27 @@
+.training {
+    padding: 13px 17px 10px;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "image"
+        "par"
+        "links";
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .training {
+        padding: 13px $desktop-margin 119px;
+    }
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .training {
+        padding-top: 102px;
+        grid-template-columns: 1fr 48.4%;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "title image"
+            "par image"
+            "links image";
+    }
+}

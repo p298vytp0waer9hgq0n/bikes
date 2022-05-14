@@ -1,0 +1,18 @@
+.inspiration {
+    padding: 21px 17px 0;
+    display: grid;
+    grid-template-areas:
+        "image"
+        "quote"
+        "sign";
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .inspiration {
+        padding: 42px 8.33% 0;
+        grid-template-columns: 54.2% 1fr;
+        grid-template-areas:
+            "image quote"
+            "image sign";
+    }
+}

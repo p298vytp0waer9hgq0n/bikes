@@ -1,0 +1,26 @@
+.bikes__dropdown-list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: var(--color-bg-button);
+    list-style: none;
+    z-index: 1;
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .bikes__dropdown-list {
+        display: flex;
+        width: min-content;
+        flex-direction: row;
+        gap: 26px;
+        top: -83px;
+        left: auto;
+        right: $desktop-margin;
+        background: none;
+    }
+}

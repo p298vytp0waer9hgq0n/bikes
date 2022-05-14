@@ -1,0 +1,21 @@
+.bikes__dropdown-button {
+    @include button-style;
+    margin-left: $mobile-margin;
+    min-width: 114px;
+    padding: 6px 8px 6px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--color-title);
+    border: 1px solid var(--color-separator);
+    border-radius: 2px;
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .bikes__dropdown-button {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+.bikes__ddlist-element_active {
+    font-weight: 600;
+    color: var(--color-title);
+    opacity: 1;
+}
+
+.bikes__ddlist-element_active:hover {
+    opacity: var(--opacity-hover-active-bike);
+}

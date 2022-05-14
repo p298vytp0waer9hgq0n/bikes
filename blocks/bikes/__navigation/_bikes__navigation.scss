@@ -1,0 +1,11 @@
+.bikes__navigation {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .bikes__navigation {
+        display: none;
+    }
+}

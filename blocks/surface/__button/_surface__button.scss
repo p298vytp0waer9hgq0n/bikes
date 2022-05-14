@@ -1,0 +1,25 @@
+.surface__button {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    aspect-ratio: 1 / 1;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-bg-button);
+    color: var(--color-title);
+    cursor: pointer;
+}
+
+.surface__button:hover {
+    opacity: .6;
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .surface__button {
+        transform: scale(2);
+
+    }
+}

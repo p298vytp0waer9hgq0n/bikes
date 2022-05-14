@@ -1,0 +1,30 @@
+.footer__input {
+    box-sizing: border-box;
+    padding: 2px 0 0 20px;
+    width: 100%;
+    min-width: 284px;
+    max-width: 360px;
+    min-height: 50px;
+    font-family: inherit;
+    font-size: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid var(--color-br-input);
+    border-radius: 4px;
+    background: none;
+    outline: none;
+}
+
+.footer__input::placeholder {
+    color: var(--color-placeholder);
+    opacity: .7;
+}
+
+.footer__input:hover::placeholder {
+    color: var(--color-title);
+    opacity: 1;
+}
+
+.footer__input:focus {
+    border: 1px solid var(--color-br-input-focus);
+}

@@ -1,0 +1,39 @@
+:root {
+    --color-bg: #f4f4f4;
+    --color-title: #151515;
+    --color-paragraph: #222;
+    --color-capture: #151515;
+    --color-bg-button: #ebebeb;
+    --color-capt-line: #d7d4d4;
+    --color-separator: #e3e3e3;
+    --color-bg-footer: #efefef;
+    --color-br-input: rgba(199, 199, 199, 0.5);
+    --color-br-input-focus: rgb(199, 199, 199);
+    --color-copyright: #cfcfcf;
+    --color-accent: #24b47e;
+    --color-bg-switch: #fff;
+    --color-switcher-icon: #cfcfcf;
+    --color-placeholder: #222222;
+    --opacity-hover-header: .75;
+    --opacity-bike: .7;
+    --opacity-hover-bike: .6;
+    --opacity-hover-active-bike: .75;
+    --opacity-hover-training: .75;
+    --card-shadow: 0 20px 140px rgba(0, 0, 0, 0.06);
+    --card-active-shadow: 0 20px 140px rgba(0, 0, 0, 0.11);
+}
+
+$color-bg: #f4f4f4;
+$color-title: #151515;
+$color-paragraph: #222222;
+
+$color-bg-dark: #333;
+$color-title-dark: #fff;
+$color-paragraph-dark: #e5e5e5;
+
+$mobile-margin: 17px;
+$desktop-margin: 8.33%;
+
+$main-breakpoint: 700px;
+$secondary-breakpoint: 1030px;
+$bikes-breakpoint: 480px;
