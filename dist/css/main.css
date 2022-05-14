@@ -36,6 +36,7 @@
   --color-separator: #e3e3e3;
   --color-bg-footer: #efefef;
   --color-br-input: rgba(199, 199, 199, 0.5);
+  --color-br-input-focus: rgb(199, 199, 199);
   --color-copyright: #cfcfcf;
   --color-accent: #24b47e;
   --color-bg-switch: #fff;
@@ -60,6 +61,7 @@
   --color-bg-footer: #2f2f2f;
   --color-separator: #707070;
   --color-br-input: rgba(125, 125, 125, 0.5);
+  --color-br-input-focus: rgb(125, 125, 125);
   --color-copyright: #565656;
   --color-bg-switch: #545454;
   --color-switcher-icon: #676767;
@@ -474,7 +476,6 @@
   top: 75%;
   width: 70px;
   height: 28px;
-  background-image: url("../img/flag-road.svg");
   background-repeat: no-repeat;
   background-size: cover;
   grid-area: image;
@@ -490,6 +491,18 @@
     height: 40px;
   }
 }
+.surface__flag_type_road {
+  background-image: url("../img/flag-road.svg");
+}
+
+.surface__flag_type_gravel {
+  background-image: url("../img/flag-gravel.svg");
+}
+
+.surface__flag_type_tt {
+  background-image: url("../img/flag-tt.svg");
+}
+
 .surface__image {
   display: block;
   width: 100%;
@@ -825,6 +838,11 @@
   border: 1px solid var(--color-br-input);
   border-radius: 4px;
   background: none;
+  outline: none;
+}
+
+.footer__input:focus {
+  border: 1px solid var(--color-br-input-focus);
 }
 
 .footer__copyright {
