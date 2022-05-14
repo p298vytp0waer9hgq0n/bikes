@@ -13,6 +13,10 @@
     cursor: pointer;
 }
 
+.surface__button:hover {
+    opacity: .6;
+}
+
 @media screen and (min-width: $secondary-breakpoint) {
     .surface__button {
         transform: scale(2);

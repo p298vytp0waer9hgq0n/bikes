@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+.training__nav-element:hover {
+    opacity: .75;
+}
+
 @media screen and (min-width: $secondary-breakpoint) {
     .training__nav-element {
         font-size: 18px;

@@ -4,10 +4,11 @@
     font-weight: 400;
     cursor: pointer;
     color: var(--color-paragraph);
+    opacity: var(--opacity-bike);
 }
 
 .bikes__ddlist-element:hover {
-    opacity: .75;
+    opacity: var(--opacity-hover-bike);
 }
 
 @media screen and (min-width: $secondary-breakpoint) {

@@ -42,6 +42,11 @@
   --color-bg-switch: #fff;
   --color-switcher-icon: #cfcfcf;
   --color-placeholder: #222222;
+  --opacity-hover-header: .75;
+  --opacity-bike: .7;
+  --opacity-hover-bike: .6;
+  --opacity-hover-active-bike: .75;
+  --opacity-hover-training: .75;
   --card-shadow: 0 20px 140px rgba(0, 0, 0, 0.06);
 }
 
@@ -67,7 +72,10 @@
   --color-bg-switch: #545454;
   --color-switcher-icon: #676767;
   --color-placeholder: #fff;
-  --card-shadow: none;
+  --opacity-hover-header: .6;
+  --opacity-hover-bike: .5;
+  --opacity-hover-active-bike: .65;
+  --opacity-hover-training: .65;
 }
 
 .separator {
@@ -135,8 +143,12 @@
 .header__nav-link {
   color: var(--color-title);
   font-size: 14px;
-  font-weight: 500px;
+  font-weight: 500;
   text-decoration: none;
+}
+
+.header__nav-link:hover {
+  opacity: var(--opacity-hover-header);
 }
 
 .mobile-menu {
@@ -259,13 +271,21 @@
 }
 .lead__button {
   padding: 15px;
-  background: var(--color-accent);
+  background-size: 200%;
+  background-image: linear-gradient(90deg, #319e75 49.99%, var(--color-accent) 50%);
+  background-position: 100%;
   color: #fff;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 1px;
   border: none;
   border-radius: 4px;
+  transition: background-position 0.7s ease-out;
+  cursor: pointer;
+}
+
+.lead__button:hover {
+  background-position: 0%;
 }
 
 @media screen and (min-width: 700px) {
@@ -425,6 +445,10 @@
   background-color: var(--color-bg-button);
   color: var(--color-title);
   cursor: pointer;
+}
+
+.surface__button:hover {
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 1030px) {
@@ -628,10 +652,11 @@
   font-weight: 400;
   cursor: pointer;
   color: var(--color-paragraph);
+  opacity: var(--opacity-bike);
 }
 
 .bikes__ddlist-element:hover {
-  opacity: 0.75;
+  opacity: var(--opacity-hover-bike);
 }
 
 @media screen and (min-width: 1030px) {
@@ -642,6 +667,11 @@
 .bikes__ddlist-element_active {
   font-weight: 600;
   color: var(--color-title);
+  opacity: 1;
+}
+
+.bikes__ddlist-element_active:hover {
+  opacity: var(--opacity-hover-active-bike);
 }
 
 .bikes__card-container {
@@ -676,6 +706,7 @@
   border-radius: 20px;
   box-shadow: var(--card-shadow);
   background-color: #f4f4f4;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1030px) {
@@ -795,6 +826,10 @@
   line-height: 1.43;
   color: var(--color-title);
   text-decoration: none;
+}
+
+.training__nav-element:hover {
+  opacity: 0.75;
 }
 
 @media screen and (min-width: 1030px) {
