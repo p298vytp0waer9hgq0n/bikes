@@ -160,7 +160,10 @@
 
     <footer class="footer">
         <h1 class="footer__title">Подпишитесь на рассылку —</h1>
-        <input type="text" class="footer__input">
+        <form class="footer__email-container" name="email" action="#">
+            <input type="email" class="footer__input" placeholder="Ваш e-mail">
+            <button class="footer__submit" type="submit">ok</button>
+        </form>
         <div class="footer__tail-container">
             <p class="footer__copyright">© Road Club 2021</p>
             <div class="theme-switcher">
@@ -188,6 +191,7 @@
     <script src="./scripts/surface-slider.js"></script>
     <script src="./scripts/bikes.js"></script>
     <script src="./scripts/theme-switch.js"></script>
+    <script src="./scripts/email-form.js"></script>
 </body>
 
 </html>
