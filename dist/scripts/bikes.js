@@ -5,6 +5,8 @@ const bikesDDList = document.querySelector('.bikes__dropdown-list');
 const bikesDDElements = Array.from(document.querySelectorAll('.bikes__ddlist-element'));
 const bikesSliders = Array.from(document.querySelectorAll('.bikes__card-container'));
 
+let bikesActiveSlider = bikesSliders[0];
+
 bikesDDButton.addEventListener('click', () => {
     if (bikesDDList.style.display === 'flex') {
         bikesDDList.style.display = '';
@@ -23,6 +25,7 @@ for (const bindex in bikesDDElements) {
         for (const slindex in bikesSliders) {
             if (slindex === bindex) {
                 bikesSliders[slindex].classList.remove('hidden');
+                bikesActiveSlider = bikesSliders[slindex];
                 bikesDDElements[slindex].classList.add('bikes__ddlist-element_active');
             } else {
                 bikesSliders[slindex].classList.add('hidden');
@@ -30,4 +33,10 @@ for (const bindex in bikesDDElements) {
             }
         }
     })
+}
+
+for (const slide of bikesSliders) {
+    slide.addEventListener(onmousedown) {
+
+    }
 }

@@ -48,6 +48,7 @@
   --opacity-hover-active-bike: .75;
   --opacity-hover-training: .75;
   --card-shadow: 0 20px 140px rgba(0, 0, 0, 0.06);
+  --card-active-shadow: 0 20px 140px rgba(0, 0, 0, 0.11);
 }
 
 .page {
@@ -76,6 +77,7 @@
   --opacity-hover-bike: .5;
   --opacity-hover-active-bike: .65;
   --opacity-hover-training: .65;
+  --card-active-shadow: 0 20px 140px rgba(0, 0, 0, 0.55);
 }
 
 .separator {
@@ -707,6 +709,11 @@
   box-shadow: var(--card-shadow);
   background-color: #f4f4f4;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.bikes__card:hover {
+  box-shadow: var(--card-active-shadow);
 }
 
 @media screen and (min-width: 1030px) {

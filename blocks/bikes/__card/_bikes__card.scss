@@ -10,6 +10,11 @@
     box-shadow: var(--card-shadow);
     background-color: #f4f4f4;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.bikes__card:hover {
+    box-shadow: var(--card-active-shadow);
 }
 
 @media screen and (min-width: $secondary-breakpoint) {
