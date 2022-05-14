@@ -100,7 +100,7 @@
   justify-content: flex-end;
   align-items: center;
   background: var(--color-bg);
-  z-index: 1;
+  z-index: 2;
 }
 
 @media screen and (min-width: 700px) {
@@ -632,6 +632,7 @@
   flex-direction: column;
   background: var(--color-bg-button);
   list-style: none;
+  z-index: 1;
 }
 
 @media screen and (min-width: 1030px) {
@@ -684,6 +685,7 @@
   gap: 34px;
   width: 300%;
   flex-shrink: 0;
+  transition: all 0.3s;
 }
 
 @media screen and (min-width: 480px) {
@@ -758,7 +760,16 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #151515;
+  background: #cacaca;
+}
+
+@media screen and (min-width: 480px) {
+  .bikes__nav-element:last-of-type {
+    display: none;
+  }
+}
+.bikes__nav-element_active {
+  background-color: var(--color-title);
 }
 
 .training {

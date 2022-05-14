@@ -6,6 +6,14 @@ emailInput.addEventListener('focus', () => {
     emailSubmit.style.display = 'inline-block';
 });
 
+emailSubmit.addEventListener('focusout', (evt) => {
+    evt.stopPropagation();
+});
+
+emailForm.addEventListener('focusout', (evt) => {
+    setTimeout(() => {if (document.activeElement !== emailSubmit) emailSubmit.style.display = '';}, 50);
+});
+
 emailForm.addEventListener('submit', (evt) => {
     evt.preventDefault();
     emailInput.value = 'Круто!';

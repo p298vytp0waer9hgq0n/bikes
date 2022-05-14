@@ -9,6 +9,7 @@
     flex-direction: column;
     background: var(--color-bg-button);
     list-style: none;
+    z-index: 1;
 }
 
 @media screen and (min-width: $secondary-breakpoint) {

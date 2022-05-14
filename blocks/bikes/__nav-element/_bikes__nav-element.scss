@@ -2,5 +2,11 @@
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: #151515;
+    background: #cacaca;
+}
+
+@media screen and (min-width: $bikes-breakpoint) {
+    .bikes__nav-element:last-of-type {
+        display: none;
+    }
 }

@@ -4,6 +4,8 @@ const bikesButtonText = document.querySelector('.bikes__dropdown-text');
 const bikesDDList = document.querySelector('.bikes__dropdown-list');
 const bikesDDElements = Array.from(document.querySelectorAll('.bikes__ddlist-element'));
 const bikesSliders = Array.from(document.querySelectorAll('.bikes__card-container'));
+const bikesSlides = document.querySelectorAll('.bikes__card');
+const bikesNavs = Array.from(document.querySelectorAll('.bikes__nav-element'));
 
 let bikesActiveSlider = bikesSliders[0];
 
@@ -35,8 +37,58 @@ for (const bindex in bikesDDElements) {
     })
 }
 
-for (const slide of bikesSliders) {
-    slide.addEventListener(onmousedown) {
+let initial = 0;
+let start;
+let edge;
+let slidin = false;
+let position;
+let cardWidth;
 
+for (const slide of bikesSliders) {
+    console.log(slide);
+    slide.addEventListener('mousedown', (evt) => {
+        bikesActiveSlider.style.transition = 'none';
+        evt.preventDefault();
+        if (window.innerWidth >= 1030) return;
+        start = evt.clientX; 
+        edge = window.innerWidth - bikesActiveSlider.clientWidth;
+        cardWidth = bikesActiveSlider.clientWidth / 3;
+        let position = bikesActiveSlider.style.transform || '0';
+        initial = parseInt(position.match(/-*\d+/)[0], 10);
+        document.onmouseup = calcSlide;
+        document.onmousemove = trackSlide;
+    });
+};
+
+function trackSlide (evt) {
+    slidin = true;
+    position = initial + evt.clientX - start;
+    if (position > 0) position = 0;
+    if (position < edge) position = edge;
+    bikesActiveSlider.style.transform = `translateX(${position}px)`;
+};
+
+function calcSlide (evt) {
+    bikesActiveSlider.style.transition = '';
+    document.onmousemove = null;
+    document.onmouseup = null;
+    let shift = Math.round(position / cardWidth);
+    bikesActiveSlider.style.transform = `translateX(${cardWidth * shift}px)`;
+    for (const i in bikesNavs) {
+        if (parseInt(i, 10) + shift === 0) {
+            bikesNavs[i].classList.add('bikes__nav-element_active');
+        } else {
+            bikesNavs[i].classList.remove('bikes__nav-element_active');
+        }
     }
+    
+}
+
+for (const slide of bikesSlides) {
+    slide.addEventListener('click', (evt) => {
+        if (slidin) {
+            evt.preventDefault();
+            slidin = false
+        }
+    });
 }
