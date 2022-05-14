@@ -1,0 +1,17 @@
+@mixin title-style {
+    font-size: min(55px, max(3.82vw, 32px));
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    color: var(--color-title);
+}
+
+@mixin paragraph-style {
+    font-size: min(3.75vw, 18px);
+    line-height: 1.5;
+    color: var(--color-paragraph);
+}
+
+@mixin button-style {
+    font-family: inherit;
+    cursor: pointer;
+}

@@ -18,7 +18,7 @@
                 <li><a class="header__nav-link" href="#training">Тренировки</a></li>
             </ul>
         </nav>
-        <button class="header__mmbutton" type="button"><svg width="22" height="19" stroke="currentColor" fill="none"
+        <button class="header__mmbutton" type="button" aria-label="Меню"><svg width="22" height="19" stroke="currentColor" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 1.5h22m-22 8h22m-22 8h22" stroke-width="3" />
             </svg></button>
@@ -40,7 +40,7 @@
 
         <div class="separator"></div>
 
-        <section class="inspiration">
+        <section class="inspiration" aria-label="Цитата на злобу дня">
             <img src="./img/quote.png" alt="Велосипедист на просёлке" class="inspiration__image">
             <h2 class="inspiration__quote">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</h2>
             <div class="inspiration__signature">
@@ -51,7 +51,7 @@
 
         <div class="separator"></div>
 
-        <section class="surface" id="surface">
+        <section class="surface" id="surface" aria-label="Виды покрытий">
             <div class="surface__slider-container">
                 <div class="surface__slider">
                     <div class="surface__slide">
@@ -76,8 +76,8 @@
                 </div>
             </div>
             <div class="surface__navigation">
-                <button class="surface__button" type="button"><svg width="6" height="12" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 1 1 6l4.5 5" stroke-width="1.2"/></svg></button>
-                <button class="surface__button" type="button"><svg width="6" height="12" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.5 11 5 6 .5 1" stroke-width="1.2"/></svg></button>
+                <button class="surface__button" type="button" aria-label="Предыдущий слайд"><svg width="6" height="12" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 1 1 6l4.5 5" stroke-width="1.2"/></svg></button>
+                <button class="surface__button" type="button" aria-label="Следующий слайд"><svg width="6" height="12" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.5 11 5 6 .5 1" stroke-width="1.2"/></svg></button>
             </div>
         </section>
         
@@ -86,7 +86,7 @@
         <section class="bikes" id="bikes">
             <h1 class="bikes__title">Велосипеды</h1>
             <div class="bikes__dropdown-container">
-                <button class="bikes__dropdown-button" type="button">
+                <button class="bikes__dropdown-button" type="button" aria-label="Выбрать тип покрытия">
                     <p class="bikes__dropdown-text">Шоссе</p>
                     <div class="bikes__dropdown-icon"><svg width="12" height="7" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1 1 5 4.5L11 1" stroke-width="1.2"/></svg></div>
                 </button>
@@ -186,7 +186,6 @@
             <div class="theme-switcher__dark-icon"><svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.353.939a1 1 0 0 1 .22 1.08 8 8 0 0 0 10.408 10.408 1 1 0 0 1 1.301 1.3A10.004 10.004 0 0 1 10 20C4.477 20 0 15.523 0 10 0 5.793 2.598 2.195 6.273.718a1 1 0 0 1 1.08.22Z"/></svg></div>
         </div>
     </div>    
-    <!-- <script src="./scripts/script.js"></script> -->
     <script src="./scripts/mobile-menu.js"></script>
     <script src="./scripts/surface-slider.js"></script>
     <script src="./scripts/bikes.js"></script>

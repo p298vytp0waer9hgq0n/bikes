@@ -1,4 +1,5 @@
 .footer__submit {
+    @include button-style;
     display: none;
     min-height: 50px;
     position: absolute;
