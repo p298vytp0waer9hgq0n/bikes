@@ -21,7 +21,7 @@ bikesDDButton.addEventListener('click', () => {
 
 for (const bindex in bikesDDElements) {
     bikesDDElements[bindex].addEventListener('click', (evt) => {
-        bikesButtonText.textContent = bikesDDElements[bindex].textContent;
+        bikesDDButton.firstChild.textContent = bikesDDElements[bindex].textContent;
         if (window.innerWidth < 1030) bikesDDList.style.display = '';
         bikesListArrow.style.transform = 'none';
         for (const slindex in bikesSliders) {
