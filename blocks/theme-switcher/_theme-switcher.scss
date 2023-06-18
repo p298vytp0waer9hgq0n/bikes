@@ -1,0 +1,11 @@
+.theme-switcher {
+    display: none;
+    gap: 22px;
+    align-items: center;    
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .theme-switcher {
+        display: flex;
+    }
+}

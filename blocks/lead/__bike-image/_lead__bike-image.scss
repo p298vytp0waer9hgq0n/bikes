@@ -1,0 +1,16 @@
+.lead__bike-image {
+    display: block;
+    position: sticky;
+    top: 13%;
+    width: 100%;
+    max-width: 440px;
+    aspect-ratio: initial;
+    border-radius: 20px;
+    box-shadow: 0 20px 140px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .lead__bike-image {
+        box-shadow: 0 20px 140px rgba(0, 0, 0, 0.3);
+    }
+}

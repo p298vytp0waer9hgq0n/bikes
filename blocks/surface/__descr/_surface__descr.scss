@@ -1,0 +1,18 @@
+.surface__descr {
+    @include paragraph-style;
+    margin: 38px 0 80px;
+    // width: 100%;
+    grid-area: descr;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .3s;
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .surface__descr {
+        margin-top: 0;
+        margin-bottom: 85px;
+        display: block;
+        padding-right: 29%;
+    }
+}

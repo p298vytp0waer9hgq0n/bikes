@@ -1,0 +1,10 @@
+.header__nav-link {
+    color: var(--color-title);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header__nav-link:hover {
+    opacity: var(--opacity-hover-header);
+}

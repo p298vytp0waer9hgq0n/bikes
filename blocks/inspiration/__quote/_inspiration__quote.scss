@@ -1,0 +1,17 @@
+.inspiration__quote {
+    margin-top: 41px;
+    font-size: 23px;
+    line-height: 1.26;
+    letter-spacing: -0.5px;
+    grid-area: quote;
+    color: var(--color-title);
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .inspiration__quote {
+        margin: 0px 0 0 14.5%;
+        font-size: min(34px, 2.43vw);
+        line-height: 1.29;
+        letter-spacing: -0.6px;
+    }
+}

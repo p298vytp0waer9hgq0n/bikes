@@ -1,0 +1,17 @@
+.training__nav-element {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    color: var(--color-title);
+    text-decoration: none;
+}
+
+.training__nav-element:hover {
+    opacity: .75;
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .training__nav-element {
+        font-size: 18px;
+    }
+}

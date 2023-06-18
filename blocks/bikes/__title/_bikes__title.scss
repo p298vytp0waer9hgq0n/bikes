@@ -1,0 +1,10 @@
+.bikes__title {
+    @include title-style;
+    margin: 40px 0 40px 17px;
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .bikes__title {
+        margin: 40px 0 40px $desktop-margin;
+    }
+}

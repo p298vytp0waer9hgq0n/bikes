@@ -1,0 +1,16 @@
+.bikes__capture {
+    margin: 2px 0 2px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-capture);
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .bikes__capture {
+        position: absolute;
+        bottom: -46px;
+        left: 5px;
+        font-size: min(18px, 1.25vw);
+        color: var(--color-title);
+    }
+}

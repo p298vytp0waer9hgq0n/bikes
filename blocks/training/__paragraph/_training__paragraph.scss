@@ -1,0 +1,12 @@
+.training__paragraph {
+    @include paragraph-style;
+    margin: 38px 0 10px;
+    grid-area: par;
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .training__paragraph {
+        padding-right: 25%;
+        line-height: 1.56;
+    }
+}

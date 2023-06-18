@@ -1,0 +1,14 @@
+.inspiration__name {
+    margin: 19px 0 4px;
+    font-size: 14px;
+    line-height: 1.57;
+    font-weight: 500;
+    color: var(--color-title);
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .inspiration__name {
+        margin-bottom: 6px;
+        font-size: 20px;
+    }
+}

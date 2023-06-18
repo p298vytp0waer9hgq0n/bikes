@@ -1,0 +1,23 @@
+.bikes__card-container {
+    box-sizing: border-box;
+    padding: 0 17px;
+    display: flex;
+    height: 100%;
+    gap: 34px;
+    width: 300%;
+    flex-shrink: 0;
+    transition: all .3s;
+}
+
+@media screen and (min-width: 480px) {
+    .bikes__card-container {
+        width: 150%;
+    }
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .bikes__card-container {
+        width: 100%;
+        padding: 54px $desktop-margin;
+    }
+}

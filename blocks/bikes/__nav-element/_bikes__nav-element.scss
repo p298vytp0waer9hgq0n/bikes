@@ -1,0 +1,12 @@
+.bikes__nav-element {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #cacaca;
+}
+
+@media screen and (min-width: $bikes-breakpoint) {
+    .bikes__nav-element:last-of-type {
+        display: none;
+    }
+}

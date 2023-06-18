@@ -1,0 +1,20 @@
+.surface__flag {
+    position: absolute;
+    top: 75%;
+    width: 70px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: image;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity .3s;
+}
+
+@media screen and (min-width: $secondary-breakpoint) {
+    .surface__flag {
+        top: 82%;
+        width: 98px;
+        height: 40px;
+    }
+}

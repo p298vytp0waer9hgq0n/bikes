@@ -1,0 +1,22 @@
+.lead {
+    padding: 0 17px 80px;
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "images"
+        "subtitle"
+        "button";
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .lead {
+        padding: 23px 0 80px 8.33%;
+        grid-template-columns: 38.5% 1fr;
+        grid-template-rows: auto auto auto 1fr;
+        grid-template-areas: 
+            "title images"
+            "subtitle images"
+            "button images"
+            "capt images";
+    }
+}

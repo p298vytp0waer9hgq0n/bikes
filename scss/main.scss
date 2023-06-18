@@ -1,0 +1,88 @@
+@import 'fonts', 'variables', 'mixins';
+@import '../blocks/page/page';
+@import '../blocks/page/_dark-theme/page_dark-theme';
+
+@import '../blocks/separator/separator';
+
+@import '../blocks/header/header';
+@import '../blocks/header/__mmbutton/_header__mmbutton.scss';
+@import '../blocks/header/__nav/header__nav';
+@import '../blocks/header/__nav-list/header__nav-list';
+@import '../blocks/header/__nav-link/header__nav-link';
+
+@import '../blocks/mobile-menu/mobile-menu';
+@import '../blocks/mobile-menu/__closebtn/mobile-menu__closebtn';
+@import '../blocks/mobile-menu/__navigation/mobile-menu__navigation';
+@import '../blocks/mobile-menu/__link/mobile-menu__link';
+
+@import '../blocks/lead/lead';
+@import '../blocks/lead/__title/lead__title';
+@import '../blocks/lead/__bike-card/lead__bike-card';
+@import '../blocks/lead/__bike-image/lead__bike-image';
+@import '../blocks/lead/__image/lead__image';
+@import '../blocks/lead/__subtitle/lead__subtitle';
+@import '../blocks/lead/__button/lead__button';
+@import '../blocks/lead/__caption-container/lead__caption-container';
+@import '../blocks/lead/__caption-line/lead__caption-line';
+
+@import '../blocks/inspiration/inspiration';
+@import '../blocks/inspiration/__image/inspiration__image';
+@import '../blocks/inspiration/__quote/inspiration__quote';
+@import '../blocks/inspiration/__signature/inspiration__signature';
+@import '../blocks/inspiration/__name/inspiration__name';
+@import '../blocks/inspiration/__occupation/inspiration__occupation';
+
+@import '../blocks/surface/surface';
+@import '../blocks/surface/__title/surface__title';
+@import '../blocks/surface/__navigation/surface__navigation';
+@import '../blocks/surface/__button/surface__button';
+@import '../blocks/surface/__slider-container/surface__slider-container';
+@import '../blocks/surface/__slider/surface__slider';
+@import '../blocks/surface/__slide/surface__slide';
+@import '../blocks/surface/__flag/surface__flag';
+@import '../blocks/surface/__flag/_type/surface__flag_type_road';
+@import '../blocks/surface/__flag/_type/surface__flag_type_gravel';
+@import '../blocks/surface/__flag/_type/surface__flag_type_tt';
+@import '../blocks/surface/__image/surface__image';
+@import '../blocks/surface/__descr/surface__descr';
+
+@import '../blocks/bikes/bikes';
+@import '../blocks/bikes/__title/bikes__title';
+@import '../blocks/bikes/__dropdown-container/bikes__dropdown-container';
+@import '../blocks/bikes/__dropdown-button/bikes__dropdown-button';
+@import '../blocks/bikes/__dropdown-text/bikes__dropdown-text';
+@import '../blocks/bikes/__dropdown-list/bikes__dropdown-list';
+@import '../blocks/bikes/__ddlist-element/bikes__ddlist-element';
+@import '../blocks/bikes/__ddlist-element/_active/bikes__ddlist-element_active';
+@import '../blocks/bikes/__card-container/bikes__card-container';
+@import '../blocks/bikes/__card/bikes__card';
+@import '../blocks/bikes/__image/bikes__image';
+@import '../blocks/bikes/__capture/bikes__capture';
+@import '../blocks/bikes/__navigation/bikes__navigation';
+@import '../blocks/bikes/__nav-element/bikes__nav-element';
+@import '../blocks/bikes/__nav-element/_active/bikes__nav-element_active';
+
+@import '../blocks/training/training';
+@import '../blocks/training/__title/training__title';
+@import '../blocks/training/__image/training__image';
+@import '../blocks/training/__paragraph/training__paragraph';
+@import '../blocks/training/__navigation/training__navigation';
+@import '../blocks/training/__nav-element/training__nav-element';
+
+@import '../blocks/footer/footer';
+@import '../blocks/footer/__title/footer__title';
+@import '../blocks/footer/__email-container/footer__email-container';
+@import '../blocks/footer/__input/footer__input';
+@import '../blocks/footer/__submit/footer__submit';
+@import '../blocks/footer/__copyright/footer__copyright';
+@import '../blocks/footer/__tail-container/footer__tail-container';
+
+@import '../blocks/theme-switcher/theme-switcher';
+@import '../blocks/theme-switcher/_mobile/theme-switcher_mobile';
+@import '../blocks/theme-switcher/__switch/theme-switcher__switch';
+@import '../blocks/theme-switcher/__switch/_dark/theme-switcher__switch_dark';
+@import '../blocks/theme-switcher/__light-icon/theme-switcher__light-icon';
+@import '../blocks/theme-switcher/__dark-icon/theme-switcher__dark-icon';
+
+@import '../blocks/hidden/hidden';
+@import '../blocks/visible/visible';

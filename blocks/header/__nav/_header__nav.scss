@@ -1,0 +1,9 @@
+.header__nav {
+    display: none;
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .header__nav {
+        display: flex;
+    }
+}

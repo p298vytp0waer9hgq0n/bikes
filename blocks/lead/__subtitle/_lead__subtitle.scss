@@ -1,0 +1,14 @@
+.lead__subtitle {
+    @include paragraph-style;
+    margin: 38px 0 41px;
+    padding: 0;
+}
+
+@media screen and (min-width: $main-breakpoint) {
+    .lead__subtitle {
+        margin-top: 3px;
+        margin-right: 15%;
+        margin-bottom: 52px;
+        line-height: 1.56;
+    }
+}
